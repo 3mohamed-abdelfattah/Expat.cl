@@ -21,13 +21,17 @@
   font-style: normal;
 }
 
-.SFPro {
+.SFPro_font {
   font-family: 'SFPro', sans-serif;
+}
+
+.Helvetic_font {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 * {
   transition: all 0.2s ease-out;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 body {
