@@ -10,108 +10,188 @@
 </head>
 
 <body>
-    <header class="flex flex-col">
 
+    <header class="flex flex-col">
         <!-- Top bar -->
-        <div class="SFPro_font flex justify-around h-12 bg-[#2A3847] text-white font-normal text-xs uppercase">
-            <span class="flex gap-1 items-center">
-                <img src="./assets/icons/temporary.svg" alt="Icon" />
-                <h3 class="">Temporary Accommodation</h3>
+        <div class="SFPro_font flex justify-around h-12 bg-[#2A3847] text-white text-xs font-normal uppercase">
+            <span class="flex items-center gap-1">
+                <img src="./assets/icons/forHeader/temporary.svg" alt="Icon" />
+                <h3>Temporary Accommodation</h3>
             </span>
-            <span class="flex gap-1 items-center">
-                <img src="./assets/icons/response.svg" alt="Icon" />
-                <h3 class="">Get responses in 24hrs</h3>
+            <span class="flex items-center gap-1">
+                <img src="./assets/icons/forHeader/response.svg" alt="Icon" />
+                <h3>Get responses in 24hrs</h3>
             </span>
-            <span class="flex gap-1 items-center">
-                <img src="./assets/icons/support.svg" alt="Icon" />
-                <h3 class="">EXPAT SUPPORT</h3>
+            <span class="flex items-center gap-1">
+                <img src="./assets/icons/forHeader/support.svg" alt="Icon" />
+                <h3>Expat Support</h3>
             </span>
-            <span class="flex gap-1 items-center">
-                <img src="./assets/icons/tailor.svg" alt="Icon" />
-                <h3 class="">TAILOR-MADE</h3>
+            <span class="flex items-center gap-1">
+                <img src="./assets/icons/forHeader/tailor.svg" alt="Icon" />
+                <h3>Tailor-Made</h3>
             </span>
         </div>
 
-        <!-- main header & navigation -->
+        <!-- Main header & navigation -->
         <div class="flex justify-around items-center h-[70px]">
             <img src="./assets/images/Logo.png" alt="Logo" />
-            <span class="SFPro_font flex gap-16 text-sm font-medium text-[#2A3847]">
-                <p>How it works</p>
-                <p>About Expat.cl</p>
-                <p>Move to Chile</p>
-                <p>Reviews</p>
-                <p>FAQ’S</p>
-            </span>
+            <nav class="SFPro_font flex gap-16 text-sm font-medium text-[#2A3847]">
+                <a href="#">How it works</a>
+                <a href="#">About Expat.cl</a>
+                <a href="#">Move to Chile</a>
+                <a href="#">Reviews</a>
+                <a href="#">FAQ’s</a>
+            </nav>
         </div>
-
-        <!-- Hero Section -->
-        <section class="bg-cover text-white">
-            <aside class="ml-36 my-[90px]">
-                <!-- Rated Bar -->
-                <span class="flex gap-2 mb-5">
-                    <img src="./assets/icons/stars.svg" alt="Icon" />
-                    <h2>Rated <strong>Excellent</strong> (4.7/5) by our <strong>Clients</strong> on</h2>
-                    <img src="./assets/icons/bigStar.svg" alt="Icon" />
-                    <h2 class="font-bold">Trustpilot</h2>
-                </span>
-
-                <!-- head titles -->
-                <h1 class="SFPro_font text-[44px] font-bold">Hello Chile,<br />Goodbye Confusion! </h1>
-                <h2 class="text-xl text-white/75 max-w-[597px] font-medium my-[30px]">
-                    Get the right visa match for your relocation to Chile with our short 3-minute quiz!
-                </h2>
-
-                <!-- 3 checks titles -->
-                <div class="SFPro_font flex flex-col gap-4 text-lg font-medium mb-10">
-                    <span class="flex gap-2 items-center">
-                        <img src="./assets/icons/check.svg" alt="Icon" />
-                        <h3>See exactly which visa fits your move to Chile</h3>
-                    </span>
-                    <span class="flex gap-2 items-center">
-                        <img src="./assets/icons/check.svg" alt="Icon" />
-                        <h3>Skip hours of research and trial-and-error</h3>
-                    </span>
-                    <span class="flex gap-2 items-center">
-                        <img src="./assets/icons/check.svg" alt="Icon" />
-                        <h3>Get clear answers and a plan for what to do next</h3>
-                    </span>
-                </div>
-
-                <div class="w-[474px]">
-                    <!-- checkout button -->
-                    <button
-                        class="SFPro_font flex justify-center items-center gap-1 w-full h-[70px] bg-[#BC281A] text-[22px] font-bold mb-[10px]">
-                        FIND THE RIGHT VISA IN 3 MINUTES!
-                        <img src="./assets/icons/arrow.svg" alt="Icon" />
-                    </button>
-
-                    <!-- not shared data title -->
-                    <span class="SFPro_font flex gap-2 items-center justify-center text-center mb-7">
-                        <img src="./assets/icons/lock.svg" alt="Icon" />
-                        Your data is safe and won’t be shared with third parties.
-                    </span>
-
-                    <!-- client review section -->
-                    <article class="Helvetic_font flex flex-col gap-3 bg-white text-[#231F20] p-5">
-                        <img src="./assets/icons/stars.svg" alt="Icon" width="94" />
-                        <h4>Jérémie is very knowledgeable and goes above and beyond to provide a personalized service.
-                        </h4>
-                        <span class="flex gap-3 items-center">
-                            <strong>Jonathan</strong>
-                            <p class="flex gap-1 items-center text-sm">
-                                <img src="./assets/icons/verified.svg" alt="Icon" />
-                                Verified
-                            </p>
-                        </span>
-                    </article>
-                </div>
-            </aside>
-        </section>
-
-
-
-
     </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover text-white pt-[90px]">
+        <aside class="ml-36">
+            <!-- Rated Bar -->
+            <div class="flex items-center gap-2 mb-5">
+                <img src="./assets/icons/forHeroSection/stars.svg" alt="Icon" />
+                <h2>Rated <strong>Excellent</strong> (4.7/5) by our <strong>Clients</strong> on</h2>
+                <img src="./assets/icons/forHeroSection/bigStar.svg" alt="Icon" />
+                <h2 class="font-bold">Trustpilot</h2>
+            </div>
+
+            <!-- Head titles -->
+            <h1 class="SFPro_font text-[44px] font-bold leading-tight">
+                Hello Chile,<br />Goodbye Confusion!
+            </h1>
+            <h2 class="text-xl text-white/75 max-w-[597px] font-medium my-[30px]">
+                Get the right visa match for your relocation to Chile with our short 3-minute quiz!
+            </h2>
+
+            <!-- Checkpoints -->
+            <div class="SFPro_font flex flex-col gap-2 text-lg font-medium mb-10">
+                <div class="flex items-center gap-2">
+                    <img src="./assets/icons/forHeroSection/check.svg" alt="Icon" />
+                    <h3>See exactly which visa fits your move to Chile</h3>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="./assets/icons/forHeroSection/check.svg" alt="Icon" />
+                    <h3>Skip hours of research and trial-and-error</h3>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="./assets/icons/forHeroSection/check.svg" alt="Icon" />
+                    <h3>Get clear answers and a plan for what to do next</h3>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="w-[474px]">
+                <button
+                    class="SFPro_font flex items-center justify-center gap-1 w-full h-[70px] bg-[#BC281A] text-[22px] font-bold mb-[10px]">
+                    FIND THE RIGHT VISA IN 3 MINUTES!
+                    <img src="./assets/icons/forHeroSection/arrow.svg" alt="Icon" />
+                </button>
+                <p class="SFPro_font flex items-center gap-2 justify-center text-center text-sm mb-7">
+                    <img src="./assets/icons/forHeroSection/lock.svg" alt="Icon" />
+                    Your data is safe and won’t be shared with third parties.
+                </p>
+
+                <!-- Client Review Section -->
+                <article class="Helvetic_font flex flex-col gap-3 bg-white text-[#231F20] p-5">
+                    <img src="./assets/icons/forHeroSection/stars.svg" alt="Icon" width="94" />
+                    <h4>Jérémie is very knowledgeable and goes above and beyond to provide a personalized service.</h4>
+                    <div class="flex items-center gap-3">
+                        <strong>Jonathan</strong>
+                        <p class="flex items-center gap-1 text-sm">
+                            <img src="./assets/icons/forHeroSection/verified.svg" alt="Icon" />
+                            Verified
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </aside>
+
+        <!-- Our Clients -->
+        <div class="flex items-center justify-between mx-36 mt-[60px] pb-[90px]">
+            <h5 class="text-xl font-semibold text-white/75">Our Clients</h5>
+            <div class="flex items-center gap-12">
+                <img src="./assets/ourClients/airbus.svg" alt="Our Clients Icon" />
+                <img src="./assets/ourClients/korea.svg" alt="Our Clients Icon" />
+                <img src="./assets/ourClients/cegelec.svg" alt="Our Clients Icon" />
+                <img src="./assets/ourClients/fao.svg" alt="Our Clients Icon" />
+                <img src="./assets/ourClients/quantum.svg" alt="Our Clients Icon" />
+                <img src="./assets/ourClients/novo.svg" alt="Our Clients Icon" />
+                <img src="./assets/ourClients/vinci.svg" alt="Our Clients Icon" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Counters Numbers -->
+    <section class="SFPro_font flex justify-evenly items-start text-center my-20">
+        <div>
+            <p class="text-[#2A3847] text-[64px] font-bold">300+</p>
+            <p class="text-[#2A3847]/75 text-[22px] max-w-[238px]">Visas approved</p>
+        </div>
+        <div>
+            <p class="text-[#2A3847] text-[64px] font-bold">85%</p>
+            <p class="text-[#2A3847]/75 text-[22px] max-w-[200px]">Faster than the typical visa process</p>
+        </div>
+        <div>
+            <p class="text-[#2A3847] text-[64px] font-bold">98%</p>
+            <p class="text-[#2A3847]/75 text-[22px] max-w-[200px]">Approval rate for all visa types</p>
+        </div>
+        <div>
+            <p class="text-[#2A3847] text-[64px] font-bold">45+</p>
+            <p class="text-[#2A3847]/75 text-[22px] max-w-[238px]">Countries with citizens we’ve worked with</p>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="SFPro_font text-center p-20 bg-[#F2F5F6]">
+        <h1 class="text-[#2A3847] text-[44px] font-bold">How It Works</h1>
+        <h2 class="text-[#2A3847]/75 text-xl mb-12">
+            Find out which visa you need for your move to Chile in 3 simple steps!
+        </h2>
+
+        <!-- step 1 -->
+        <div class="flex justify-around items-start">
+            <div class="flex flex-col items-center max-w-[320px]">
+                <img src="./assets/icons/forHowWorks/quiz.svg" alt="Quiz Icon" />
+                <div
+                    class="w-8 h-8 flex justify-center items-center mt-8 text-white bg-[#2A3847] text-xl font-bold rounded-full">
+                    1
+                </div>
+                <h1 class="text-[#2A3847] text-[22px] font-bold mt-5">Take A Short Quiz</h1>
+                <p class="text-[#2A3847]/75">
+                    Answer a few basic questions in our short 3-minute quiz.
+                </p>
+            </div>
+
+            <!-- step 2 -->
+            <div class="flex flex-col items-center max-w-[332px]">
+                <img src="./assets/icons/forHowWorks/whichVisa.svg" alt="Which Visa Icon" />
+                <div
+                    class="w-8 h-8 flex justify-center items-center mt-8 text-white bg-[#2A3847] text-xl font-bold rounded-full">
+                    2
+                </div>
+                <h1 class="text-[#2A3847] text-[22px] font-bold mt-5">See Which Visa You Need & Get Help</h1>
+                <p class="text-[#2A3847]/75">
+                    Find out which visa is best for you and get all your questions answered in a 15-minute call.
+                </p>
+            </div>
+
+            <!-- step 3 -->
+            <div class="flex flex-col items-center max-w-[332px]">
+                <img src="./assets/icons/forHowWorks/walkThrough.svg" alt="Walkthrough Icon" />
+                <div
+                    class="w-8 h-8 flex justify-center items-center mt-8 text-white bg-[#2A3847] text-xl font-bold rounded-full">
+                    3
+                </div>
+                <h1 class="text-[#2A3847] text-[22px] font-bold mt-5">Let Us Walk You Through It</h1>
+                <p class="text-[#2A3847]/75">
+                    Get your hand held through the immigration process to get your residence in Chile.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
 </body>
 
 </html>
