@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'SFPro';
+  src: url('../assets/fonts/SFProDisplay-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFPro';
+  src: url('../assets/fonts/SFProDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFPro';
+  src: url('../assets/fonts/SFProDisplay-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.SFPro {
+  font-family: 'SFPro', sans-serif;
+}
+
+* {
+  transition: all 0.2s ease-out;
+  outline: 1px solid red;
+}
+
+body {
+  font-family: "Montserrat", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.bg-cover {
+  background-image: url('../assets/images/for_landing/hero.png');
+
+}
