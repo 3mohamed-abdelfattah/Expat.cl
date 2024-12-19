@@ -26,7 +26,7 @@
 @tailwind utilities;
 
 * {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 body {
@@ -108,9 +108,12 @@ html {
 }
 
 @media (max-width: 640px) {
-
-  /* 640px هو الحجم الافتراضي لـ sm */
   .animate-marquee {
-    animation: marquee 15s linear infinite;
+    animation: marquee 30s linear infinite;
   }
+}
+
+/* Custom styles */
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
 }

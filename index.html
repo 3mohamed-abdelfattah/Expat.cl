@@ -34,16 +34,47 @@
         </div>
 
         <!-- Main header & navigation -->
-        <div class="flex justify-around items-center h-[70px]">
-            <img src="./assets/images/Logo.png" alt="Logo" />
-            <nav class="SFPro_font flex gap-16 text-sm font-medium text-[#2A3847]">
+        <div class="flex justify-between items-center h-[70px] px-4 lg:px-24">
+            <img src="./assets/images/Logo.png" alt="Logo" class="h-10" />
+            <nav class="SFPro_font hidden lg:flex gap-10 xl:gap-16 text-sm font-medium text-[#2A3847]">
                 <a href="#">How it works</a>
                 <a href="#">About Expat.cl</a>
                 <a href="#">Move to Chile</a>
                 <a href="#">Reviews</a>
                 <a href="#">FAQ’s</a>
             </nav>
+            <button id="burgerMenu" class="lg:hidden flex flex-col gap-1.5">
+                <span class="block w-6 h-0.5 bg-[#2A3847]"></span>
+                <span class="block w-6 h-0.5 bg-[#2A3847]"></span>
+                <span class="block w-6 h-0.5 bg-[#2A3847]"></span>
+            </button>
         </div>
+        <nav id="mobileNav"
+            class="SFPro_font fixed inset-0 flex text-lg flex-col items-center text-center justify-center gap-4 font-medium text-[#2A3847] bg-white/90 transform translate-x-full transition-transform lg:hidden z-50">
+            <div class="absolute top-20 right-4">
+                <button id="closeMenu" class="flex flex-col gap-1.5">
+                    <span class="block w-6 h-0.5 bg-[#2A3847] rotate-45 translate-y-1"></span>
+                    <span class="block w-6 h-0.5 bg-[#2A3847] -rotate-45 -translate-y-1"></span>
+                </button>
+            </div>
+            <a href="#" class="w-full py-2 hover:bg-gray-100">How it works</a>
+            <a href="#" class="w-full py-2 hover:bg-gray-100">About Expat.cl</a>
+            <a href="#" class="w-full py-2 hover:bg-gray-100">Move to Chile</a>
+            <a href="#" class="w-full py-2 hover:bg-gray-100">Reviews</a>
+            <a href="#" class="w-full py-2 hover:bg-gray-100">FAQ’s</a>
+        </nav>
+
+        <script>
+            document.getElementById('burgerMenu').addEventListener('click', function () {
+                const mobileNav = document.getElementById('mobileNav');
+                mobileNav.classList.remove('translate-x-full');
+            });
+
+            document.getElementById('closeMenu').addEventListener('click', function () {
+                const mobileNav = document.getElementById('mobileNav');
+                mobileNav.classList.add('translate-x-full');
+            });
+        </script>
     </header>
 
     <!-- Hero Section -->
