@@ -333,7 +333,7 @@
         </aside>
     </section>
 
-    <!-- Slider Section -->
+    <!-- Need Help Slider Section -->
     <section class="SFPro_font slider-section bg-[#F2F5F6] px-36 py-20 overflow-hidden">
         <h1 class="text-[#2A3847] text-[44px] font-bold text-center">Need Help Moving To Chile?</h1>
         <h2 class="text-[#2A3847]/75 text-xl text-center mt-2 mb-12">
@@ -471,6 +471,112 @@
             </div>
         </div>
     </section>
+
+    <!-- Don't just Slider Section -->
+    <section class="slider-section px-36 py-20 overflow-hidden">
+        <h1 class="SFPro_font text-[#2A3847] text-[44px] font-bold text-center capitalize">Don't just take our word for
+            it!</h1>
+        <h2 class="text-[#2A3847]/75 text-xl font-medium text-center mt-2 mb-12">
+            There is a reason hundreds of expatriates have trusted us since 2016.
+        </h2>
+        <div class="container mx-auto px-4">
+            <div class="swiper-container2 relative">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide min-w-[420px] w-full max-w-[720px]">
+                        <div class="SFPro_font flex bg-[#F2F5F6] gap-4 text-[#231F20] p-5">
+                            <p class="mt-2 font-bold">MS</p>
+                            <article class="flex flex-col">
+                                <div class="flex justify-between">
+                                    <h1 class="font-bold text-lg">Michelle Stone</h1>
+                                    <h1>May 03, 2023</h1>
+                                </div>
+                                <span class="flex items-center gap-1 mb-3">
+                                    <img src="./assets/icons/forReviews/location.svg" alt="Icon" />
+                                    <p class="text-black text-xs">CL</p>
+                                </span>
+                                <img src="./assets/icons/forHeroSection/stars.svg" alt="Icon" width="94" />
+                                <h4 class="my-3">
+                                    I highly recommend Jérémie and Expat.cl to assist you navigate the Chilean
+                                    Immigration
+                                    system. Their service is invaluable. I can't imagine attempting to go through this
+                                    process myself. And I am thrilled to now be a permanent Chilean resident, thanks to
+                                    Jérémie’s hard work, professionalism, and persistence!
+                                </h4>
+                                <h3 class="flex items-center text-sm gap-1">
+                                    <strong>Date of experience:</strong>
+                                    May 03, 2023
+                                </h3>
+                            </article>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide min-w-[420px] w-full max-w-[720px]">
+                        <div class="SFPro_font flex bg-[#F2F5F6] gap-4 text-[#231F20] p-5">
+                            <p class="mt-2 font-bold">CY</p>
+                            <article class="flex flex-col">
+                                <div class="flex justify-between">
+                                    <h1 class="font-bold text-lg">Christopher Yates</h1>
+                                    <h1>Apr 25, 2022</h1>
+                                </div>
+                                <span class="flex items-center gap-1 mb-3">
+                                    <img src="./assets/icons/forReviews/location.svg" alt="Icon" />
+                                    <p class="text-black text-xs">US</p>
+                                </span>
+                                <img src="./assets/icons/forHeroSection/stars.svg" alt="Icon" width="94" />
+                                <h4 class="my-3">
+                                    Excellent service for a very good price. I didn't do the 1 hour consultation I just
+                                    paid
+                                    we agreed he would simply answer the few questions I had. (I didn't want to take up
+                                    his
+                                    time to answer the 3 or 4 questions I had). He gave me an estimate to get me an
+                                    Rentista
+                                    Residency and it was very reasonable. He answered all of my questions and so far as
+                                    to
+                                    give me a list of things I needed to do in order to achieve our goal...
+                                </h4>
+                                <h3 class="flex items-center text-sm gap-1">
+                                    <strong>Date of experience:</strong>
+                                    Apr 25, 2022
+                                </h3>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- Explore button -->
+            <!-- Call to Action -->
+            <button
+                class="SFPro_font mx-auto my-12 max-w-[474px] flex items-center justify-center gap-1 w-full h-[70px] text-white bg-[#BC281A] text-[22px] font-bold mb-[10px] uppercase">
+                Take Short Quiz Now
+                <img src="./assets/icons/forHeroSection/arrow.svg" alt="Icon" />
+            </button>
+
+            <!-- Rated Bar -->
+            <span class="flex items-center justify-center max-w-[474px] mx-auto gap-2">
+                <img src="./assets/icons/forHeroSection/stars.svg" alt="Icon" />
+                <h2>Rated <strong>Excellent</strong> (4.7/5) on</h2>
+                <img src="./assets/icons/forHeroSection/bigStar.svg" alt="Icon" />
+                <h2 class="font-bold">Trustpilot</h2>
+            </span>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var swiper = new Swiper('.swiper-container2', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+            });
+        });
+    </script>
 
 </body>
 
