@@ -644,11 +644,6 @@ video {
   z-index: 50;
 }
 
-.mx-36{
-  margin-left: 9rem;
-  margin-right: 9rem;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -684,11 +679,6 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.my-\[30px\]{
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -721,10 +711,6 @@ video {
   margin-bottom: 10px;
 }
 
-.ml-36{
-  margin-left: 9rem;
-}
-
 .mt-1{
   margin-top: 0.25rem;
 }
@@ -743,10 +729,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-\[60px\]{
-  margin-top: 60px;
 }
 
 .flex{
@@ -781,16 +763,16 @@ video {
   width: 40%;
 }
 
+.w-24{
+  width: 6rem;
+}
+
 .w-40{
   width: 10rem;
 }
 
 .w-8{
   width: 2rem;
-}
-
-.w-\[474px\]{
-  width: 474px;
 }
 
 .w-\[597px\]{
@@ -902,10 +884,6 @@ video {
   gap: 0.25rem;
 }
 
-.gap-12{
-  gap: 3rem;
-}
-
 .gap-16{
   gap: 4rem;
 }
@@ -930,6 +908,10 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.whitespace-nowrap{
+  white-space: nowrap;
 }
 
 .rounded-full{
@@ -1028,10 +1010,6 @@ video {
 
 .pb-14{
   padding-bottom: 3.5rem;
-}
-
-.pb-\[90px\]{
-  padding-bottom: 90px;
 }
 
 .pt-\[90px\]{
@@ -1249,7 +1227,34 @@ html {
   left: -80px !important;
 }
 
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 640px) {
+  /* 640px هو الحجم الافتراضي لـ sm */
+
+  .animate-marquee {
+    animation: marquee 15s linear infinite;
+  }
+}
+
 @media (min-width: 640px){
+  .sm\:mx-4{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .sm\:mt-16{
+    margin-top: 4rem;
+  }
+
   .sm\:gap-2{
     gap: 0.5rem;
   }
@@ -1303,5 +1308,36 @@ html {
 
   .lg\:gap-9{
     gap: 2.25rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:mx-36{
+    margin-left: 9rem;
+    margin-right: 9rem;
+  }
+
+  .xl\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .xl\:mt-\[60px\]{
+    margin-top: 60px;
+  }
+
+  .xl\:w-auto{
+    width: auto;
+  }
+
+  .xl\:flex-row{
+    flex-direction: row;
+  }
+
+  .xl\:gap-12{
+    gap: 3rem;
+  }
+
+  .xl\:pb-\[90px\]{
+    padding-bottom: 90px;
   }
 }

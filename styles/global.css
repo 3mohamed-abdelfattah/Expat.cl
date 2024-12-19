@@ -64,7 +64,7 @@ html {
   background-image: url("../assets/images/for_landing/footer.png");
   background-repeat: no-repeat;
   background-size: cover;
-    background-position: center;
+  background-position: center;
 }
 
 .bg-custom-blue {
@@ -94,4 +94,23 @@ html {
 
 .swiper-button-prev {
   left: -80px !important;
+}
+
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 640px) {
+
+  /* 640px هو الحجم الافتراضي لـ sm */
+  .animate-marquee {
+    animation: marquee 15s linear infinite;
+  }
 }
