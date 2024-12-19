@@ -674,6 +674,11 @@ video {
   margin-bottom: 30px;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -899,6 +904,14 @@ video {
   gap: 1rem;
 }
 
+.gap-5{
+  gap: 1.25rem;
+}
+
+.gap-9{
+  gap: 2.25rem;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1009,6 +1022,10 @@ video {
 
 .pt-\[90px\]{
   padding-top: 90px;
+}
+
+.pb-14{
+  padding-bottom: 3.5rem;
 }
 
 .text-left{
