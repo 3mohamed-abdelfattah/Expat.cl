@@ -783,6 +783,10 @@ video {
   height: 70px;
 }
 
+.h-auto{
+  height: auto;
+}
+
 .min-h-\[818px\]{
   min-height: 818px;
 }
@@ -971,6 +975,12 @@ video {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2rem * var(--tw-space-x-reverse));
+  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1059,6 +1069,10 @@ video {
 
 .p-6{
   padding: 1.5rem;
+}
+
+.p-2{
+  padding: 0.5rem;
 }
 
 .px-36{
@@ -1375,8 +1389,20 @@ html {
     display: none;
   }
 
+  .md\:h-12{
+    height: 3rem;
+  }
+
   .md\:max-w-\[597px\]{
     max-width: 597px;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:p-0{
+    padding: 0px;
   }
 
   .md\:px-0{
