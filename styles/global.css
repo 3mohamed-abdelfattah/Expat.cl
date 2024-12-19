@@ -53,8 +53,14 @@ html {
   width: 0px;
 }
 
-.bg-cover {
+.bg-heroCover {
   background-image: url("../assets/images/for_landing/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-footerCover {
+  background-image: url("../assets/images/for_landing/footer.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -62,7 +68,6 @@ html {
 .bg-custom-blue {
   background-color: rgba(4, 102, 175, 0.1);
 }
-
 
 /* CSS for positioning navigation buttons */
 .swiper-button-next,
