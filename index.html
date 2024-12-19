@@ -212,29 +212,29 @@
     </section>
 
     <!-- How Expat.cl can help section -->
-    <section class="flex">
+    <section class="relative flex flex-col-reverse lg:flex-row">
         <!-- Left side image -->
-        <img src="./assets/images/for_landing/town.png" alt="How Expat.cl can help" class="w-2/5 object-cover" />
-
+        <img src="./assets/images/for_landing/town.png" alt="How Expat.cl can help" class="lg:w-2/5 object-cover" />
+        <!-- background pattern -->
+        <img src="./assets/images/patterns/pattern.png" alt="pattern" class="absolute right-0 top-0 opacity-30" />
         <!-- Right side section -->
         <aside
-            class="flex flex-col justify-center items-center my-12 text-left relative w-full text-[#2A3847] overflow-hidden">
-            <img src="./assets/images/patterns/pattern.png" alt="pattern" class="absolute right-0 top-0 opacity-30" />
-
+            class="flex flex-col justify-center items-center my-12 text-left relative px-5 w-full text-[#2A3847] overflow-hidden">
             <!-- Head titles -->
-            <h1 class="SFPro_font text-[44px] leading-tight max-w-[597px]">How Expat.cl can help with your
+            <h1 class="SFPro_font text-[34px] sm:text-[44px] leading-tight sm:max-w-[597px]">How Expat.cl can help with
+                your
                 <strong>Residency
                     in Chile?</strong>
             </h1>
-            <h2 class="text-xl text-[#2A3847]/75 max-w-[597px] font-medium mt-2 mb-6">No more stressing about paperwork
+            <h2 class="sm:text-xl text-[#2A3847]/75 max-w-[597px] font-medium mt-2 mb-6">No more stressing about
+                paperwork
                 and
                 no more researching different articles for hours… Get your immigration sorted—quick & easy!</h2>
-
 
             <!-- Checkpoints -->
             <div class="SFPro_font flex flex-col gap-2 font-medium text-[#2A3847]/75">
                 <!-- First Checkpoint -->
-                <span class="flex max-w-[597px] gap-3">
+                <span class="flex max-w-[597px] gap-2 sm:gap-3">
                     <!-- SVG Icon -->
                     <svg class="shrink-0 mt-1" width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -249,7 +249,7 @@
                     </h3>
                 </span>
                 <!-- Second Checkpoint -->
-                <span class="flex max-w-[597px] gap-3">
+                <span class="flex max-w-[597px] gap-2 sm:gap-3">
                     <!-- SVG Icon -->
                     <svg class="shrink-0 mt-1" width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -264,7 +264,7 @@
                     </h3>
                 </span>
                 <!-- Third Checkpoint -->
-                <span class="flex max-w-[597px] gap-3">
+                <span class="flex max-w-[597px] gap-2 sm:gap-3">
                     <!-- SVG Icon -->
                     <svg class="shrink-0 mt-1" width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -279,7 +279,7 @@
                     </h3>
                 </span>
                 <!-- Fourth Checkpoint -->
-                <span class="flex max-w-[597px] gap-3">
+                <span class="flex max-w-[597px] gap-2 sm:gap-3">
                     <!-- SVG Icon -->
                     <svg class="shrink-0 mt-1" width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -294,7 +294,7 @@
                     </h3>
                 </span>
                 <!-- Fifth Checkpoint -->
-                <span class="flex max-w-[597px] gap-3">
+                <span class="flex max-w-[597px] gap-2 sm:gap-3">
                     <!-- SVG Icon -->
                     <svg class="shrink-0 mt-1" width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -313,17 +313,23 @@
             <div class="w-[597px] mt-5">
                 <!-- Call to Action -->
                 <button
-                    class="SFPro_font max-w-[474px] flex items-center justify-center gap-1 w-full h-[70px] text-white bg-[#BC281A] text-[22px] font-bold mb-[10px]">
+                    class="SFPro_font w-80 sm:w-full sm:max-w-[474px] flex mx-auto items-center justify-center gap-1 h-[70px] text-white bg-[#BC281A] sm:text-[22px] font-bold mb-[10px]">
                     FIND THE RIGHT VISA IN 3 MINUTES!
                     <img src="./assets/icons/forHeroSection/arrow.svg" alt="Icon" />
                 </button>
 
                 <!-- Rated Bar -->
-                <span class="flex items-center justify-center max-w-[474px] gap-2">
+                <span class="hidden sm:flex mx-auto items-center justify-center max-w-[474px] gap-2">
                     <img src="./assets/icons/forHeroSection/stars.svg" alt="Icon" />
                     <h2>Rated <strong>Excellent</strong> (4.7/5) on</h2>
                     <img src="./assets/icons/forHeroSection/bigStar.svg" alt="Icon" />
                     <h2 class="font-bold">Trustpilot</h2>
+                </span>
+
+                <!-- Rated Bar for mobile -->
+                <span class="flex sm:hidden mx-auto items-center justify-center max-w-[474px] gap-2">
+                    <img src="./assets/icons/forHeroSection/stars.svg" alt="Icon" />
+                    <h2>Rated <strong>Excellent</strong> (4.7/5)</h2>
                 </span>
             </div>
         </aside>
