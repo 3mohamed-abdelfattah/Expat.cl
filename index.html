@@ -65,18 +65,6 @@
             <a href="#" class="w-full py-2 hover:bg-gray-100">Reviews</a>
             <a href="#" class="w-full py-2 hover:bg-gray-100">FAQ’s</a>
         </nav>
-
-        <script>
-            document.getElementById('burgerMenu').addEventListener('click', function () {
-                const mobileNav = document.getElementById('mobileNav');
-                mobileNav.classList.remove('translate-x-full');
-            });
-
-            document.getElementById('closeMenu').addEventListener('click', function () {
-                const mobileNav = document.getElementById('mobileNav');
-                mobileNav.classList.add('translate-x-full');
-            });
-        </script>
     </header>
 
     <!-- Hero Section -->
@@ -158,39 +146,40 @@
     </section>
 
     <!-- Counters Numbers -->
-    <section class="SFPro_font flex justify-evenly items-start text-center my-20">
-        <div>
-            <p class="text-[#2A3847] text-[64px] font-bold">300+</p>
-            <p class="text-[#2A3847]/75 text-[22px] max-w-[238px]">Visas approved</p>
+    <section class="SFPro_font flex flex-wrap gap-2 justify-evenly items-start text-center my-5 sm:my-20">
+        <div class="w-48 sm:max-w-[238px]">
+            <p class="text-[#2A3847] text-5xl sm:text-[64px] font-bold">300+</p>
+            <p class="text-[#2A3847]/75 sm:text-[22px]">Visas approved</p>
         </div>
-        <div>
-            <p class="text-[#2A3847] text-[64px] font-bold">85%</p>
-            <p class="text-[#2A3847]/75 text-[22px] max-w-[200px]">Faster than the typical visa process</p>
+        <div class="w-48 sm:max-w-[200px]">
+            <p class="text-[#2A3847] text-5xl sm:text-[64px] font-bold">85%</p>
+            <p class="text-[#2A3847]/75 sm:text-[22px] ">Faster than the typical visa process</p>
         </div>
-        <div>
-            <p class="text-[#2A3847] text-[64px] font-bold">98%</p>
-            <p class="text-[#2A3847]/75 text-[22px] max-w-[200px]">Approval rate for all visa types</p>
+        <div class="w-48 sm:max-w-[200px]">
+            <p class="text-[#2A3847] text-5xl sm:text-[64px] font-bold">98%</p>
+            <p class="text-[#2A3847]/75 sm:text-[22px] ">Approval rate for all visa types</p>
         </div>
-        <div>
-            <p class="text-[#2A3847] text-[64px] font-bold">45+</p>
-            <p class="text-[#2A3847]/75 text-[22px] max-w-[238px]">Countries with citizens we’ve worked with</p>
+        <div class="w-48 sm:max-w-[238px]">
+            <p class="text-[#2A3847] text-5xl sm:text-[64px] font-bold">45+</p>
+            <p class="text-[#2A3847]/75 sm:text-[22px]">Countries with citizens we’ve worked with</p>
         </div>
     </section>
 
-    <!-- How It Works -->
-    <section class="SFPro_font text-center p-20 bg-[#F2F5F6]">
-        <h1 class="text-[#2A3847] text-[44px] font-bold">How It Works</h1>
-        <h2 class="text-[#2A3847]/75 text-xl mb-12">Find out which visa you need for your move to Chile in 3 simple
-            steps!
-        </h2>
+    <!-- How It Works Section -->
+    <section class="SFPro_font text-center p-10 md:p-20 bg-[#F2F5F6]">
+        <h1 class="text-[#2A3847] text-[32px] md:text-[44px] font-bold">How It Works</h1>
+        <h2 class="text-[#2A3847]/75 text-lg md:text-xl mb-8 md:mb-12">Find out which visa you need for your move to
+            Chile
+            in 3 simple steps!</h2>
 
-        <!-- Step 1 -->
-        <div class="flex justify-around items-start">
+        <div class="flex flex-wrap justify-around items-start gap-8 xl:gap-0">
+            <!-- Step 1 -->
             <div class="flex flex-col items-center max-w-[320px]">
                 <img src="./assets/icons/forHowWorks/quiz.svg" alt="Quiz Icon" />
                 <div
                     class="w-8 h-8 flex justify-center items-center mt-8 text-white bg-[#2A3847] text-xl font-bold rounded-full">
-                    1</div>
+                    1
+                </div>
                 <h1 class="text-[#2A3847] text-[22px] font-bold mt-5">Take A Short Quiz</h1>
                 <p class="text-[#2A3847]/75">Answer a few basic questions in our short 3-minute quiz.</p>
             </div>
@@ -200,7 +189,8 @@
                 <img src="./assets/icons/forHowWorks/whichVisa.svg" alt="Which Visa Icon" />
                 <div
                     class="w-8 h-8 flex justify-center items-center mt-8 text-white bg-[#2A3847] text-xl font-bold rounded-full">
-                    2</div>
+                    2
+                </div>
                 <h1 class="text-[#2A3847] text-[22px] font-bold mt-5">See Which Visa You Need & Get Help</h1>
                 <p class="text-[#2A3847]/75">Find out which visa is best for you and get all your questions answered in
                     a
@@ -212,7 +202,8 @@
                 <img src="./assets/icons/forHowWorks/walkThrough.svg" alt="Walkthrough Icon" />
                 <div
                     class="w-8 h-8 flex justify-center items-center mt-8 text-white bg-[#2A3847] text-xl font-bold rounded-full">
-                    3</div>
+                    3
+                </div>
                 <h1 class="text-[#2A3847] text-[22px] font-bold mt-5">Let Us Walk You Through It</h1>
                 <p class="text-[#2A3847]/75">Get your hand held through the immigration process to get your residence in
                     Chile.</p>
@@ -815,6 +806,7 @@
 
 </body>
 
+<script src="./scripts/header.js"></script>
 <script src="./scripts/swiper.js"></script>
 <script src="./scripts/questions.js"></script>
 
