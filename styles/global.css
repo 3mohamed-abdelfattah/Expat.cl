@@ -96,7 +96,6 @@ html {
   left: -80px !important;
 }
 
-
 @keyframes marquee {
   from {
     transform: translateX(100%);
