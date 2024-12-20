@@ -106,9 +106,48 @@ html {
   }
 }
 
-@media (max-width: 640px) {
+/* animate top bar */
+.animate-marquee {
+  display: flex;
+  width: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-item {
+  padding: 8px;
+}
+
+/* Apply animation only on small screens */
+@media (min-width: 640px) {
   .animate-marquee {
-    animation: marquee 30s linear infinite;
+    animation: none;
+  }
+}
+
+/* animate clients */
+.animate-marquee-client {
+  width: 100%;
+  animation: marquee 25s linear infinite;
+}
+
+.item-marquee-client {
+  display: block;
+}
+
+/* Apply animation only on small screens */
+@media (min-width: 880px) {
+  .animate-marquee-client {
+    animation: none;
+  }
+
+  .item-marquee-client {
+    display: none;
   }
 }
 

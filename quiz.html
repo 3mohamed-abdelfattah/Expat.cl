@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/images/symbol.png" />
+    <link href="./styles/output.css" rel="stylesheet" />
+    <link href="./styles/global.css" rel="stylesheet" />
+    <title>Expat.cl</title>
+    <style>
+        .step {
+            display: none;
+        }
+
+        .step.active {
+            display: block;
+        }
+
+        .step-completed {
+            color: #2A3847;
+            /* Navy color */
+        }
+
+        .step-indicator-completed {
+            background-color: #2A3847;
+            /* Navy color */
+            color: white;
+        }
+
+        .step-indicator-active {
+            border: 2px solid #2A3847;
+            /* Navy color */
+            color: #2A3847;
+        }
+
+        .step-indicator-current {
+            background-color: white;
+            color: #2A3847;
+            border: 2px solid #2A3847;
+        }
+
+        .error-message {
+            color: red;
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        .thank-you-message {
+            display: none;
+            text-align: center;
+            font-size: 1.25rem;
+            color: #2A3847;
+            /* Navy color */
+        }
+
+        input.special::placeholder {
+            color: #0465af5b;
+        }
+
+
+        input:focus {
+            border-bottom: 2px solid #0466AF;
+            /* اللون الذي تريده */
+            outline: none;
+            /* لإزالة الإطار الافتراضي */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flex flex-col border-b-4 border-[#F2F5F6]">
+        <!-- Top bar -->
+        <div class="SFPro_font bg-[#2A3847] text-white text-xs font-normal uppercase marquee-container">
+            <div class="animate-marquee  gap-8 justify-around">
+                <div class="marquee-item flex items-center gap-1">
+                    <img src="./assets/icons/forHeader/temporary.svg" alt="Icon" />
+                    <h3>Temporary Accommodation</h3>
+                </div>
+                <div class="marquee-item flex items-center gap-1">
+                    <img src="./assets/icons/forHeader/response.svg" alt="Icon" />
+                    <h3>Get responses in 24hrs</h3>
+                </div>
+                <div class="marquee-item flex items-center gap-1">
+                    <img src="./assets/icons/forHeader/support.svg" alt="Icon" />
+                    <h3>Expat Support</h3>
+                </div>
+                <div class="marquee-item flex items-center gap-1">
+                    <img src="./assets/icons/forHeader/tailor.svg" alt="Icon" />
+                    <h3>Tailor-Made</h3>
+                </div>
+                <!-- Repeat content for seamless loop -->
+                <span class="flex gap-8 sm:hidden">
+                    <div class="marquee-item flex items-center gap-1">
+                        <img src="./assets/icons/forHeader/temporary.svg" alt="Icon" />
+                        <h3>Temporary Accommodation</h3>
+                    </div>
+                    <div class="marquee-item flex items-center gap-1">
+                        <img src="./assets/icons/forHeader/response.svg" alt="Icon" />
+                        <h3>Get responses in 24hrs</h3>
+                    </div>
+                    <div class="marquee-item flex items-center gap-1">
+                        <img src="./assets/icons/forHeader/support.svg" alt="Icon" />
+                        <h3>Expat Support</h3>
+                    </div>
+                    <div class="marquee-item flex items-center gap-1">
+                        <img src="./assets/icons/forHeader/tailor.svg" alt="Icon" />
+                        <h3>Tailor-Made</h3>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+        <!-- Main header & navigation -->
+        <div class="flex flex-col gap-5 items-center p-5">
+            <img src="./assets/images/Logo.png" alt="Logo" class="h-10" />
+            <!-- Rated Bar -->
+            <div class="flex items-center gap-1 sm:gap-2 text-left">
+                <img src="./assets/icons/forHeroSection/stars.svg" alt="Icon" />
+                <h2 class="text-sm sm:text-base w-fit">Rated <strong>Excellent</strong> (4.7/5) by our
+                    <strong>Clients</strong> on
+                </h2>
+                <img src="./assets/icons/forHeroSection/bigStar.svg" alt="Icon" />
+                <h2 class="font-bold">Trustpilot</h2>
+            </div>
+    </header>
+
+    <div class="SFPro_font relative flex items-center justify-center pt-10 sm:pt-24 overflow-hidden">
+        <!-- background pattern -->
+        <img src="./assets/images/patterns/pattern3.png" alt="pattern"
+            class="absolute right-0 top-0 opacity-30 lg:opacity-100" />
+        <div class="max-w-[600px]">
+            <!-- Header -->
+            <div class="text-center mb-6">
+                <p id="stepText" class="text-lg font-medium text-[#2A3847]/75">First up, let’s get to know you!</p>
+            </div>
+
+            <!-- Step Indicator -->
+            <div class="flex items-center justify-center mb-4">
+                <div class="flex items-center step-indicator text-white">
+                    <div id="indicator-1" class="w-8 h-8 flex items-center justify-center bg-[#D4DCE4] font-bold ">
+                        1</div>
+                    <div class="w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
+                    <div id="indicator-2" class="w-8 h-8 flex items-center bg-[#D4DCE4] justify-center font-bold">2
+                    </div>
+                    <div class="w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
+                    <div id="indicator-3" class="w-8 h-8 flex items-center bg-[#D4DCE4] justify-center font-bold">3
+                    </div>
+                    <div class="w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
+                    <div id="indicator-4" class="w-8 h-8 flex items-center bg-[#D4DCE4] justify-center font-bold">4
+                    </div>
+                    <div class="w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
+                    <div id="indicator-5" class="w-8 h-8 flex items-center bg-[#D4DCE4] justify-center font-bold">5
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <form id="multiStepForm">
+                <!-- Step 1 -->
+                <div id="step-1" class="step active mx-5">
+                    <h2 class="text-2xl sm:text-[44px] font-bold text-[#2A3847] text-center mt-14 mb-10">A few details
+                        to contact
+                        you</h2>
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="text" id="firstName" placeholder="Enter your first name"
+                                class="w-full text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] focus:outline-none special"
+                                required>
+                            <input type="text" id="lastName" placeholder="Enter your last name"
+                                class="w-full text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] focus:outline-none special"
+                                required>
+                        </div>
+                        <input type="email" id="email" placeholder="Enter your email address"
+                            class="w-full text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] focus:outline-none special"
+                            required>
+                        <div class="flex items-center">
+                            <select id="countryCode"
+                                class="px-3 h-[56px] text-[#0466AF] bg-[#0466AF]/20 border-2 border-[#0466AF]/30 border-r-0 focus:outline-none special">
+                                <option>+1</option>
+                                <option>+2</option>
+                                <option>+20</option>
+                            </select>
+                            <input type="tel" id="phone" placeholder="(201) 555-0123"
+                                class="w-full  text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 border-l-0 px-4 h-[56px] focus:outline-none special"
+                                required>
+                        </div>
+                    </div>
+                    <div class="error-message" id="error-step-1">Please fill out all fields correctly.</div>
+                </div>
+
+                <!-- Step 2 -->
+                <div id="step-2" class="step">
+                    <h2 class="text-2xl sm:text-[44px] font-bold text-[#2A3847] text-center mt-14 mb-10">
+                        What is the best Chilean visa for you?
+                    </h2>
+                    <div class="space-y-4">
+                        <div>
+                            <input type="radio" id="option1" name="options" value="option1">
+                            <label for="option1">Option 1</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="option2" name="options" value="option2">
+                            <label for="option2">Option 2</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="option3" name="options" value="option3">
+                            <label for="option3">Option 3</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="customOption" name="options" value="custom">
+                            <label for="customOption">Other:</label>
+                            <input type="text" id="customInput" placeholder="Enter your option"
+                                class="w-full px-4 py-2 border focus:outline-none focus:ring focus:ring-blue-300"
+                                disabled>
+                        </div>
+                    </div>
+                    <div class="error-message" id="error-step-2">Please select an option or enter a custom option.</div>
+                </div>
+
+                <!-- Step 3 -->
+                <div id="step-3" class="step">
+                    <h2 class="text-lg font-semibold text-gray-800 mb-4">More details</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <input type="radio" id="choice1" name="choices" value="choice1">
+                            <label for="choice1">Choice 1</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="choice2" name="choices" value="choice2">
+                            <label for="choice2">Choice 2</label>
+                        </div>
+                        <div id="additionalFields" class="hidden">
+                            <input type="text" placeholder="Additional field 1"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300">
+                            <input type="text" placeholder="Additional field 2"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300">
+                            <select
+                                class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300">
+                                <option>Option A</option>
+                                <option>Option B</option>
+                                <option>Option C</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="error-message" id="error-step-3">Please select a choice and fill out all additional
+                        fields.</div>
+                </div>
+
+                <!-- Step 4 -->
+                <div id="step-4" class="step">
+                    <h2 class="text-lg font-semibold text-gray-800 mb-4">Select your nationality</h2>
+                    <div class="space-y-4">
+                        <select id="nationality"
+                            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+                            required>
+                            <option value="">Select Nationality</option>
+                            <option value="Nationality 1">Nationality 1</option>
+                            <option value="Nationality 2">Nationality 2</option>
+                            <option value="Nationality 3">Nationality 3</option>
+                        </select>
+                    </div>
+                    <div class="error-message" id="error-step-4">Please select your nationality.</div>
+                </div>
+
+                <!-- Step 5 -->
+                <div id="step-5" class="step">
+                    <h2 class="text-lg font-semibold text-gray-800 mb-4">Final step</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <input type="radio" id="finalOption1" name="finalOptions" value="finalOption1">
+                            <label for="finalOption1">Final Option 1</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="finalOption2" name="finalOptions" value="finalOption2">
+                            <label for="finalOption2">Final Option 2</label>
+                        </div>
+                    </div>
+                    <div class="error-message" id="error-step-5">Please select a final option.</div>
+                </div>
+
+                <!-- Continue Button -->
+                <div class="mt-6 mx-auto sm:mt-12 mb-8 sm:mb-20 text-center">
+                    <button type="button" id="nextStep"
+                        class="w-64 h-16 text-xl font-bold  bg-[#BC281A] text-white hover:bg-red-900 uppercase">
+                        Continue
+                    </button>
+                </div>
+            </form>
+
+            <!-- Thank You Message -->
+            <div class="thank-you-message" id="thankYouMessage">
+                <p>Thank you for completing the form!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- for desktop -->
+    <footer class="SFPro_font bg-[#2A3847] text-white hidden md:flex justify-around items-center z-40">
+        <h3>Copyright © 2016-2024 Expat.cl.</h3>
+        <img src="./assets/images/FooterLogo.png" class="my-10" alt="Logo" />
+        <span class="flex items-center gap-2 lg:gap-9">
+            <h3>Privacy Policy</h3>
+            <h3>Terms of Use</h3>
+        </span>
+    </footer>
+
+    <!-- for mobile -->
+    <footer class="flex md:hidden SFPro_font bg-[#2A3847] text-white flex-col  items-center p-4">
+        <img src="./assets/images/FooterLogo.png" class="mt-5 w-40" alt="Logo" />
+        <span class="flex items-center gap-4 my-5 text-sm">
+            <h3>Privacy Policy</h3>
+            <h3>Terms of Use</h3>
+        </span>
+        <h3 class="text-center text-sm">Copyright © 2016-2024 Expat.cl.</h3>
+    </footer>
+
+    <script>
+        // JavaScript for step navigation and validation
+        const steps = document.querySelectorAll('.step');
+        const nextStepBtn = document.getElementById("nextStep");
+        const stepIndicators = document.querySelectorAll('.step-indicator div');
+        const stepText = document.getElementById("stepText");
+        let currentStep = 0;
+
+        const stepTexts = [
+            "First up, let’s get to know you!",
+            "Hi Mark! Complete our 4-step process. Find out the best visa for you.",
+        ];
+
+        function showStep(step) {
+            steps.forEach((stepElement, index) => {
+                stepElement.classList.toggle('active', index === step);
+            });
+
+            if (step < steps.length) {
+                stepIndicators.forEach((indicator, index) => {
+                    if (index % 2 === 0) { // index is even, it's a step indicator
+                        indicator.classList.toggle('step-indicator-current', index / 2 == step);
+                        indicator.classList.toggle('step-indicator-completed', index / 2 <= step);
+                    } else { // index is odd, it's a separator
+                        indicator.classList.toggle('step-indicator-completed', Math.floor(index / 2) < step);
+                    }
+                });
+                stepText.textContent = stepTexts[step];
+            } else {
+                // If we are beyond the last step, make all indicators completed
+                stepIndicators.forEach((indicator, index) => {
+                    if (index % 2 === 0) { // index is even, it's a step indicator
+                        indicator.classList.add('step-indicator-completed');
+                        indicator.classList.remove('step-indicator-current');
+                    } else { // index is odd, it's a separator
+                        indicator.classList.add('step-indicator-completed');
+                    }
+                });
+            }
+        }
+
+        function validateStep(step) {
+            let isValid = true;
+            const inputs = steps[step].querySelectorAll('input[required], select[required]');
+            inputs.forEach(input => {
+                if (!input.value) {
+                    isValid = false;
+                    input.classList.add('border-red-500');
+                } else {
+                    input.classList.remove('border-red-500');
+                }
+            });
+
+            const errorMessage = document.getElementById(`error-step-${step + 1}`);
+            if (!isValid) {
+                errorMessage.style.display = 'block';
+            } else {
+                errorMessage.style.display = 'none';
+            }
+
+            return isValid;
+        }
+
+        nextStepBtn.addEventListener("click", () => {
+            if (validateStep(currentStep)) {
+                currentStep++;
+                if (currentStep < steps.length) {
+                    showStep(currentStep);
+                } else {
+                    showStep(currentStep); // Update indicators for the last step
+                    document.getElementById("multiStepForm").style.display = 'none';
+                    document.getElementById("thankYouMessage").style.display = 'block';
+                }
+            }
+        });
+
+        document.getElementById('customOption').addEventListener('change', function () {
+            document.getElementById('customInput').disabled = !this.checked;
+        });
+
+        document.getElementsByName('choices').forEach(choice => {
+            choice.addEventListener('change', function () {
+                document.getElementById('additionalFields').classList.toggle('hidden', this.value !== 'choice2');
+            });
+        });
+
+        // Initialize the first step
+        showStep(currentStep);
+    </script>
+</body>
+
+</html>

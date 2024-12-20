@@ -14,23 +14,42 @@
 <body>
     <header class="flex flex-col">
         <!-- Top bar -->
-        <div class="SFPro_font bg-[#2A3847] text-white text-xs font-normal uppercase overflow-hidden">
-            <div class="animate-marquee flex justify-around sm:space-x-8 h-12">
-                <span class="flex items-center gap-1 p-2 md:p-0">
+        <div class="SFPro_font bg-[#2A3847] text-white text-xs font-normal uppercase marquee-container">
+            <div class="animate-marquee  gap-8 justify-around">
+                <div class="marquee-item flex items-center gap-1">
                     <img src="./assets/icons/forHeader/temporary.svg" alt="Icon" />
                     <h3>Temporary Accommodation</h3>
-                </span>
-                <span class="flex items-center gap-1 p-2 md:p-0">
+                </div>
+                <div class="marquee-item flex items-center gap-1">
                     <img src="./assets/icons/forHeader/response.svg" alt="Icon" />
                     <h3>Get responses in 24hrs</h3>
-                </span>
-                <span class="flex items-center gap-1 p-2 md:p-0">
+                </div>
+                <div class="marquee-item flex items-center gap-1">
                     <img src="./assets/icons/forHeader/support.svg" alt="Icon" />
                     <h3>Expat Support</h3>
-                </span>
-                <span class="flex items-center gap-1 p-2 md:p-0">
+                </div>
+                <div class="marquee-item flex items-center gap-1">
                     <img src="./assets/icons/forHeader/tailor.svg" alt="Icon" />
                     <h3>Tailor-Made</h3>
+                </div>
+                <!-- Repeat content for seamless loop -->
+                <span class="flex gap-8 sm:hidden">
+                    <div class="marquee-item flex items-center gap-1">
+                        <img src="./assets/icons/forHeader/temporary.svg" alt="Icon" />
+                        <h3>Temporary Accommodation</h3>
+                    </div>
+                    <div class="marquee-item flex items-center gap-1">
+                        <img src="./assets/icons/forHeader/response.svg" alt="Icon" />
+                        <h3>Get responses in 24hrs</h3>
+                    </div>
+                    <div class="marquee-item flex items-center gap-1">
+                        <img src="./assets/icons/forHeader/support.svg" alt="Icon" />
+                        <h3>Expat Support</h3>
+                    </div>
+                    <div class="marquee-item flex items-center gap-1">
+                        <img src="./assets/icons/forHeader/tailor.svg" alt="Icon" />
+                        <h3>Tailor-Made</h3>
+                    </div>
                 </span>
             </div>
         </div>
@@ -105,7 +124,7 @@
 
             <!-- Call to Action -->
             <div class="max-w-[474px]">
-                <a href="./pages/quiz.html">
+                <a href="./quiz.html">
                     <button
                         class="SFPro_font flex items-center justify-center gap-1 w-full h-[70px] bg-[#BC281A] sm:text-[22px] font-bold mb-[10px]">FIND
                         THE RIGHT VISA IN 3 MINUTES! <img src="./assets/icons/forHeroSection/arrow.svg"
@@ -134,17 +153,32 @@
             class="flex flex-col xl:flex-row items-center justify-between sm:mx-4 xl:mx-36 mt-5 sm:mt-16 xl:mt-[60px] pb-14 xl:pb-[90px]">
             <h5 class="text-xl font-semibold text-white/75 mb-4 xl:mb-0">Our Clients</h5>
             <div class="flex items-center gap-4 xl:gap-12 overflow-hidden relative w-full xl:w-auto">
-                <div class="flex items-center gap-4 xl:gap-12 mx-auto animate-marquee whitespace-nowrap">
-                    <img src="./assets/ourClients/airbus.svg" alt="Our Clients Icon" class="w-24 xl:w-auto" />
-                    <img src="./assets/ourClients/korea.svg" alt="Our Clients Icon" class="w-24 xl:w-auto" />
-                    <img src="./assets/ourClients/cegelec.svg" alt="Our Clients Icon" class="w-24 xl:w-auto" />
-                    <img src="./assets/ourClients/fao.svg" alt="Our Clients Icon" class="w-24 xl:w-auto" />
-                    <img src="./assets/ourClients/quantum.svg" alt="Our Clients Icon" class="w-24 xl:w-auto" />
-                    <img src="./assets/ourClients/novo.svg" alt="Our Clients Icon" class="w-24 xl:w-auto" />
-                    <img src="./assets/ourClients/vinci.svg" alt="Our Clients Icon" class="w-24 xl:w-auto" />
+                <div
+                    class="flex items-center justify-center xl:justify-end gap-8 xl:gap-9 2xl:gap-12 mx-auto animate-marquee-client whitespace-nowrap">
+                    <img src="./assets/ourClients/airbus.svg" alt="Our Clients Icon" />
+                    <img src="./assets/ourClients/korea.svg" alt="Our Clients Icon" />
+                    <img src="./assets/ourClients/cegelec.svg" alt="Our Clients Icon" />
+                    <img src="./assets/ourClients/fao.svg" alt="Our Clients Icon" />
+                    <img src="./assets/ourClients/quantum.svg" alt="Our Clients Icon" />
+                    <img src="./assets/ourClients/novo.svg" alt="Our Clients Icon" />
+                    <img src="./assets/ourClients/vinci.svg" alt="Our Clients Icon" />
+                    <!-- to loop effect when marquee in mobile -->
+                    <img src="./assets/ourClients/airbus.svg" alt="Our Clients Icon" class="item-marquee-client" />
+                    <img src="./assets/ourClients/korea.svg" alt="Our Clients Icon" class="item-marquee-client" />
+                    <img src="./assets/ourClients/cegelec.svg" alt="Our Clients Icon" class="item-marquee-client" />
+                    <img src="./assets/ourClients/fao.svg" alt="Our Clients Icon" class="item-marquee-client" />
+                    <img src="./assets/ourClients/quantum.svg" alt="Our Clients Icon" class="item-marquee-client" />
+                    <img src="./assets/ourClients/novo.svg" alt="Our Clients Icon" class="item-marquee-client" />
+                    <img src="./assets/ourClients/vinci.svg" alt="Our Clients Icon" class="item-marquee-client" />
                 </div>
             </div>
         </div>
+
+
+        <marquee behavior="" direction="">
+
+
+        </marquee>
     </section>
 
     <!-- Counters Numbers -->
@@ -314,7 +348,7 @@
 
             <div class="w-[597px] mt-5">
                 <!-- Call to Action -->
-                <a href="./pages/quiz.html">
+                <a href="./quiz.html">
                     <button
                         class="SFPro_font w-80 sm:w-full sm:max-w-[474px] flex mx-auto items-center justify-center gap-1 h-[70px] text-white bg-[#BC281A] sm:text-[22px] font-bold mb-[10px]">
                         FIND THE RIGHT VISA IN 3 MINUTES!
@@ -558,7 +592,7 @@
             </div>
 
             <!-- Call to Action -->
-            <a href="./pages/quiz.html">
+            <a href="./quiz.html">
                 <button
                     class="SFPro_font w-80 sm:w-full mt-4 sm:mt-10 sm:max-w-[474px] flex mx-auto items-center justify-center gap-1 h-[70px] text-white bg-[#BC281A] sm:text-[22px] font-bold mb-[10px]">
                     Take Short Quiz Now
@@ -762,7 +796,7 @@
 
             <!-- Call to Action -->
             <div class="max-w-[474px]">
-                <a href="./pages/quiz.html">
+                <a href="./quiz.html">
                     <button
                         class="SFPro_font flex items-center justify-center gap-1 w-full h-[70px] bg-[#BC281A] sm:text-[22px] font-bold mb-[10px]">
                         FIND THE RIGHT VISA IN 3 MINUTES!
