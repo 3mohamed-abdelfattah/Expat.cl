@@ -103,7 +103,7 @@ html {
 
 /* Style the checked state */
 .custom-radio:checked+.custom-radio-label::before {
-  background-color: #0466AF;
+  background-color: transparent;
 }
 
 /* Add a smaller inner circle for the checked state */
@@ -118,7 +118,7 @@ html {
   height: 12px;
   /* Adjust the size here */
   border-radius: 50%;
-  background-color: white;
+  background-color: #0466AF;
 }
 
 /* CSS for positioning navigation buttons */

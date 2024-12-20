@@ -275,29 +275,50 @@
                 </div>
 
                 <!-- Step 3 -->
-                <div id="step-3" class="step">
-                    <h2 class="text-lg font-semibold text-gray-800 mb-4">More details</h2>
+                <div id="step-3" class="step mx-5">
+                    <h2 class="text-2xl sm:text-[44px] sm:leading-10 font-bold text-[#2A3847] text-center mt-14 mb-10">
+                        When is your move to Chile planned?
+                    </h2>
                     <div class="space-y-4">
-                        <div>
-                            <input type="radio" id="choice1" name="choices" value="choice1">
-                            <label for="choice1">Choice 1</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="choice2" name="choices" value="choice2">
-                            <label for="choice2">Choice 2</label>
-                        </div>
-                        <div id="additionalFields" class="hidden">
-                            <input type="text" placeholder="Additional field 1"
-                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300">
-                            <input type="text" placeholder="Additional field 2"
-                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300">
-                            <select
-                                class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300">
-                                <option>Option A</option>
-                                <option>Option B</option>
-                                <option>Option C</option>
-                            </select>
-                        </div>
+                        <span class="flex justify-between sm:gap-5 gap-2">
+                            <div
+                                class="flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option11" name="options" value="option1">
+                                <label class="cursor-pointer custom-radio-label" for="option11">I am already in
+                                    Chile</label>
+                            </div>
+                            <div
+                                class="flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option12" name="options" value="option2">
+                                <label class="cursor-pointer custom-radio-label" for="option12">Less than 3
+                                    months</label>
+                            </div>
+                        </span>
+                        <span class="flex justify-between sm:gap-5 gap-2">
+                            <div
+                                class="flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option13" name="options" value="option1">
+                                <label class="cursor-pointer custom-radio-label" for="option13">3 to 6 months</label>
+                            </div>
+                            <div
+                                class="flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option14" name="options" value="option2">
+                                <label class="cursor-pointer custom-radio-label" for="option14">6 to 12 months</label>
+                            </div>
+                        </span>
+                        <span class="flex justify-between sm:gap-5 gap-2">
+                            <div
+                                class="flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option15" name="options" value="option1">
+                                <label class="cursor-pointer custom-radio-label" for="option15">More than 12
+                                    months</label>
+                            </div>
+                            <div
+                                class="flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option16" name="options" value="option2">
+                                <label class="cursor-pointer custom-radio-label" for="option16">I don't know yet</label>
+                            </div>
+                        </span>
                     </div>
                     <div class="error-message" id="error-step-3">Please select a choice and fill out all additional
                         fields.</div>
