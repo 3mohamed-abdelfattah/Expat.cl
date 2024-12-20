@@ -784,6 +784,10 @@ video {
   display: block;
 }
 
+.inline-block{
+  display: inline-block;
+}
+
 .flex{
   display: flex;
 }
@@ -836,16 +840,16 @@ video {
   width: 10rem;
 }
 
+.w-44{
+  width: 11rem;
+}
+
 .w-48{
   width: 12rem;
 }
 
 .w-6{
   width: 1.5rem;
-}
-
-.w-64{
-  width: 16rem;
 }
 
 .w-8{
@@ -1066,6 +1070,10 @@ video {
   border-width: 2px;
 }
 
+.border-4{
+  border-width: 4px;
+}
+
 .border-b-2{
   border-bottom-width: 2px;
 }
@@ -1088,6 +1096,11 @@ video {
 
 .border-\[\#0466AF\]\/30{
   border-color: rgb(4 102 175 / 0.3);
+}
+
+.border-\[\#BC281A\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(188 40 26 / var(--tw-border-opacity, 1));
 }
 
 .border-\[\#F2F5F6\]{
@@ -1413,6 +1426,61 @@ html {
   background-color: rgba(4, 102, 175, 0.1);
 }
 
+/* Hide the default radio button */
+
+.custom-radio {
+  display: none;
+}
+
+/* Create a custom radio button */
+
+.custom-radio+.custom-radio-label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #0466AF;
+}
+
+/* Create the radio button circle */
+
+.custom-radio+.custom-radio-label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  /* Adjust the size here */
+  height: 20px;
+  /* Adjust the size here */
+  border-radius: 50%;
+  border: 2px solid #0466AF;
+  background-color: transparent;
+}
+
+/* Style the checked state */
+
+.custom-radio:checked+.custom-radio-label::before {
+  background-color: #0466AF;
+}
+
+/* Add a smaller inner circle for the checked state */
+
+.custom-radio:checked+.custom-radio-label::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  /* Adjust the size here */
+  height: 12px;
+  /* Adjust the size here */
+  border-radius: 50%;
+  background-color: white;
+}
+
 /* CSS for positioning navigation buttons */
 
 .swiper-button-next,
@@ -1508,6 +1576,11 @@ html {
   background-color: rgb(4 102 175 / 0.3);
 }
 
+.hover\:bg-\[\#BC281A\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(188 40 26 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-gray-100:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
@@ -1516,6 +1589,11 @@ html {
 .hover\:bg-red-900:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(127 29 29 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .focus\:outline-none:focus{
@@ -1571,6 +1649,10 @@ html {
 
   .sm\:w-12{
     width: 3rem;
+  }
+
+  .sm\:w-64{
+    width: 16rem;
   }
 
   .sm\:w-full{
