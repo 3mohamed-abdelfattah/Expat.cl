@@ -53,8 +53,8 @@ html {
 
 /* Swiper Navigation Buttons */
 .swiper-pagination-bullet {
-  width: 44px !important;
-  height: 44px !important;
+  width: 15px !important;
+  height: 15px !important;
   background-color: #2a3847 !important;
   opacity: 0.5;
   transition: opacity 0.3s;
