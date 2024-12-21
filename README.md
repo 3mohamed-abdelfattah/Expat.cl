@@ -1,12 +1,38 @@
 # Expat.cl
 
-Expat.cl, a comprehensive web platform designed to provide essential support services for expatriates moving to Chile. This project aims to offer services such as temporary accommodation, quick response to queries, expat support, and tailor-made solutions to ease the transition for individuals and families relocating to Chile.
+Expat.cl is a comprehensive web platform that provides essential support services for expatriates moving to Chile. This project aims to offer services such as temporary accommodation, quick response to queries, expat support, and tailor-made solutions to ease the transition for individuals and families relocating to Chile.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2d16a28c-ed29-4829-9096-facf99bf5288" width="100" height="100">
+</p>
 
 
 ## Features
 - **Quick Responses**: Get responses to your queries within 24 hours.
 - **Expat Support**: Comprehensive support services to help expatriates settle in Chile.
 - **Tailor-Made Solutions**: Customized solutions to meet the unique needs of each expat.
+
+## Screenshots
+
+ <table align="center">
+  <tr align='center'>
+    <td><img src="https://github.com/user-attachments/assets/ef8d5d4d-42ab-46e6-a390-c5fcb2e4c20f" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/99e05fda-4ce6-42e3-8461-5a7fb6a8756c" alt="Image" /></td>
+  </tr>
+  <tr align='center'>
+    <td><img src="https://github.com/user-attachments/assets/04878613-fcb5-4da5-8645-54af2d0f5034" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/fd904143-04b0-4f1c-9b84-85984205d8ee" alt="Image" /></td>
+  </tr>
+  <tr align='center'>
+    <td><img src="https://github.com/user-attachments/assets/54687449-f1e4-4248-a542-41bffe9eb4b4" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/e36ff0f6-3fdd-47b5-a9bb-d7a66c0b66eb" alt="Image" /></td>
+  </tr>
+  <tr align='center'>
+    <td><img width='320px' src="https://github.com/user-attachments/assets/e59edcce-5db9-423c-824e-abb9d878e7b2" alt="Image" /></td>
+    <td><img width='320px' src="https://github.com/user-attachments/assets/192d25cb-4ee3-4748-b224-e1e8d6c654ae" alt="Image" /></td>
+  </tr>
+</table>
+
 
 ## Project Structure
 The project structure is organized to separate concerns and ensure maintainability:
@@ -84,6 +110,17 @@ The project structure is organized to separate concerns and ensure maintainabili
     └── quiz.html              # HTML file for the quiz pages
     └── tailwind.config.js     # Configuration file for Tailwind CSS
 ```
+
+## Performance Scores
+
+- **Accessibility**: 100/100
+- **Best Practices**: 100/100
+- **SEO**: 100/100
+
+![Score](https://github.com/user-attachments/assets/3b9ac3b5-cec3-4eaa-943e-951f4e61681b)
+
+These scores are based on Lighthouse audits, ensuring the site is optimized for speed and usability.
+
 
 ## Technologies Used
 This project leverages the following technologies:
