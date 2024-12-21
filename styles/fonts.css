@@ -1,0 +1,32 @@
+/* Font Face Definitions */
+
+/* SF Pro Font Bold */
+@font-face {
+  font-family: "SFPro";
+  src: url("../assets/fonts/SFProDisplay-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+/* SF Pro Font Medium */
+@font-face {
+  font-family: "SFPro";
+  src: url("../assets/fonts/SFProDisplay-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+/* SF Pro Font Regular */
+@font-face {
+  font-family: "SFPro";
+  src: url("../assets/fonts/SFProDisplay-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Montserrat Font */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf") format("woff2"),
+    url("../assets/fonts/Montserrat-VariableFont_wght.ttf") format("woff"),
+    url("../assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
