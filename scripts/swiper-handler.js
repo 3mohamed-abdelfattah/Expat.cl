@@ -1,30 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Initialize the first Swiper instance for .swiper-container2
-    var swiper2 = new Swiper('.swiper-container2', {
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        slidesPerView: 'auto',
-        spaceBetween: 20,
-        autoplay: {
-            delay: 3000, // مدة التمرير التلقائي بالمللي ثانية (3 ثواني)
-            disableOnInteraction: false, // استمر في التمرير التلقائي حتى بعد التفاعل
-        },
-    });
-
     // Initialize the main Swiper instance for .swiper-container
     var swiper = new Swiper('.swiper-container', {
-        loop: false,
+        loop: false, // Do not loop the slides
         pagination: {
             el: '.swiper-pagination',
-            clickable: true,
+            clickable: true, // Allow pagination bullets to be clickable
         },
-        slidesPerView: 'auto',
-        spaceBetween: 20,
+        slidesPerView: 'auto', // Display multiple slides at once
+        spaceBetween: 10, // Space between each slide in pixels
         autoplay: {
-            delay: 3000, // مدة التمرير التلقائي بالمللي ثانية (3 ثواني)
-            disableOnInteraction: false, // استمر في التمرير التلقائي حتى بعد التفاعل
+            delay: 3500, // Autoplay delay in milliseconds (3 seconds)
+            disableOnInteraction: true, // Continue autoplay even after user interaction
         },
         on: {
             slideChange: function () {
@@ -34,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             },
             init: function () {
+                // Emit the slideChange event when initialization is complete
                 this.emit('slideChange');
             }
         }
