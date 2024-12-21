@@ -62,18 +62,27 @@
         </div>
 
         <!-- Main header & navigation -->
-        <div class="flex flex-col gap-5 items-center p-5">
+        <div class="flex sm:flex-col gap-5 justify-between items-center p-3 vsm:p-5">
             <!-- Company Logo -->
             <a href="/">
-                <img src="./assets/images/Logo.png" alt="Company Logo" class="h-10" />
+                <img src="./assets/images/Logo.png" alt="Company Logo" class="w-24 vsm:w-auto" />
             </a>
 
             <!-- Rated Bar -->
-            <div class="flex flex-wrap tiny:flex-nowrap gap-1 sm:gap-2 text-left text-sm vsm:text-base">
-                <img src="./assets/icons/forHeroSection/stars.svg" alt="Rating Stars Icon" />
-                <h2 class="text-sm sm:text-base w-fit">
-                    Rated <strong>Excellent</strong> (4.7/5) by our <strong>Clients</strong> on
+            <div
+                class="flex flex-wrap flex-col items-end vsm:items-center vsm:flex-row tiny:flex-nowrap gap-1 sm:gap-2 text-left text-sm vsm:text-base">
+                <img src="./assets/icons/forHeroSection/stars.svg" alt="Rating Stars Icon"
+                    class="w-[88px] vsm:w-auto" />
+                <h2 class="sm:hidden text-xs font-normal sm:text-base w-fit">
+                    Rated <strong>Excellent</strong> (4.7/5)
                 </h2>
+                <span class="hidden sm:flex flex-wrap flex-row gap-1 items-start text-xs tiny:text-sm vsm:text-base">
+                    Rated <strong>Excellent</strong> (4.7/5) by our <strong>Clients</strong> on
+                    <span class="flex gap-1 items-center font-bold">
+                        <img src="./assets/icons/forHeroSection/bigStar.svg" alt="Icon" class="w-[17px] vsm:w-auto" />
+                        Trustpilot
+                    </span>
+                </span>
             </div>
         </div>
     </header>
@@ -681,7 +690,7 @@
                             <img src="./assets/icons/forHeroSection/stars.svg" alt="Icon" />
                             <span class="flex flex-wrap flex-row gap-1 items-start text-xs tiny:text-sm vsm:text-base">
                                 Rated <strong>Excellent</strong> (4.7/5) by our <strong>Clients</strong> on
-                                <span class="flex gap-1 items-center">
+                                <span class="flex gap-1 items-center font-bold">
                                     <img src="./assets/icons/forHeroSection/bigStar.svg" alt="Icon"
                                         class="w-[17px] vsm:w-auto" />
                                     Trustpilot
