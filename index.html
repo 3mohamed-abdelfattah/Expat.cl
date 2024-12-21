@@ -827,44 +827,30 @@
         </aside>
     </section>
 
-    <!-- for desktop -->
+    <!-- Footer for desktop -->
     <footer class="SFPro_font bg-[#2A3847] text-white hidden md:flex justify-around items-center">
         <h3>Copyright © 2016-2024 Expat.cl.</h3>
         <img src="./assets/images/FooterLogo.png" class="my-10" alt="Logo" />
-        <span class="flex items-center gap-2 lg:gap-9">
-            <h3>Privacy Policy</h3>
-            <h3>Terms of Use</h3>
-        </span>
+        <nav class="flex items-center gap-2 lg:gap-9">
+            <a href="#" class="hover:underline">Privacy Policy</a>
+            <a href="#" class="hover:underline">Terms of Use</a>
+        </nav>
     </footer>
 
-    <!-- for mobile -->
-    <footer class="flex md:hidden SFPro_font bg-[#2A3847] text-white flex-col  items-center p-4">
+    <!-- Footer for mobile -->
+    <footer class="flex md:hidden SFPro_font bg-[#2A3847] text-white flex-col items-center p-4">
         <img src="./assets/images/FooterLogo.png" class="mt-5 w-40" alt="Logo" />
-        <span class="flex items-center gap-4 my-5 text-sm">
-            <h3>Privacy Policy</h3>
-            <h3>Terms of Use</h3>
-        </span>
+        <nav class="flex items-center gap-4 my-5 text-sm">
+            <a href="#" class="hover:underline">Privacy Policy</a>
+            <a href="#" class="hover:underline">Terms of Use</a>
+        </nav>
         <h3 class="text-center text-sm">Copyright © 2016-2024 Expat.cl.</h3>
     </footer>
 
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var swiper = new Swiper('.swiper-container2', {
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                slidesPerView: 'auto',
-                spaceBetween: 20,
-            });
-        });
-    </script>
-
 </body>
 
-<script src="./scripts/header.js"></script>
-<script src="./scripts/swiper.js"></script>
-<script src="./scripts/questions.js"></script>
+<script src="./scripts/header-handler.js"></script>
+<script src="./scripts/swiper-handler.js"></script>
+<script src="./scripts/questions-handler.js"></script>
 
 </html>

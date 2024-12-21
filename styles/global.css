@@ -77,17 +77,17 @@ html {
 }
 
 /* Create a custom radio button */
-.custom-radio+.custom-radio-label {
+.custom-radio + .custom-radio-label {
   position: relative;
   padding-left: 30px;
   cursor: pointer;
   font-size: 16px;
-  color: #0466AF;
+  color: #0466af;
 }
 
 /* Create the radio button circle */
-.custom-radio+.custom-radio-label::before {
-  content: '';
+.custom-radio + .custom-radio-label::before {
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
@@ -97,18 +97,18 @@ html {
   height: 20px;
   /* Adjust the size here */
   border-radius: 50%;
-  border: 2px solid #0466AF;
+  border: 2px solid #0466af;
   background-color: transparent;
 }
 
 /* Style the checked state */
-.custom-radio:checked+.custom-radio-label::before {
+.custom-radio:checked + .custom-radio-label::before {
   background-color: transparent;
 }
 
 /* Add a smaller inner circle for the checked state */
-.custom-radio:checked+.custom-radio-label::after {
-  content: '';
+.custom-radio:checked + .custom-radio-label::after {
+  content: "";
   position: absolute;
   left: 4px;
   top: 50%;
@@ -118,7 +118,7 @@ html {
   height: 12px;
   /* Adjust the size here */
   border-radius: 50%;
-  background-color: #0466AF;
+  background-color: #0466af;
 }
 
 /* CSS for positioning navigation buttons */
@@ -201,8 +201,6 @@ html {
   }
 }
 
-/* Custom styles */
 .transition-transform {
   transition: transform 0.3s ease-in-out;
 }
-

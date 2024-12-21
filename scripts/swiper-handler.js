@@ -1,4 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Initialize the first Swiper instance for .swiper-container2
+    var swiper2 = new Swiper('.swiper-container2', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+    });
+
+    // Initialize the main Swiper instance for .swiper-container
     var swiper = new Swiper('.swiper-container', {
         loop: false,
         navigation: {
@@ -9,6 +20,11 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 20,
         on: {
             slideChange: function () {
+                // Ensure the swiper instance is fully initialized
+                if (!swiper || !swiper.slides) {
+                    return;
+                }
+
                 // Remove transparency from all slides
                 document.querySelectorAll('.swiper-slide').forEach(slide => {
                     slide.style.opacity = '1';

@@ -1108,10 +1108,6 @@ video {
   border-width: 4px;
 }
 
-.border{
-  border-width: 1px;
-}
-
 .border-b-2{
   border-bottom-width: 2px;
 }
@@ -1417,10 +1413,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.outline{
-  outline-style: solid;
-}
-
 .transition-colors{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1497,18 +1489,18 @@ html {
 
 /* Create a custom radio button */
 
-.custom-radio+.custom-radio-label {
+.custom-radio + .custom-radio-label {
   position: relative;
   padding-left: 30px;
   cursor: pointer;
   font-size: 16px;
-  color: #0466AF;
+  color: #0466af;
 }
 
 /* Create the radio button circle */
 
-.custom-radio+.custom-radio-label::before {
-  content: '';
+.custom-radio + .custom-radio-label::before {
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
@@ -1518,20 +1510,20 @@ html {
   height: 20px;
   /* Adjust the size here */
   border-radius: 50%;
-  border: 2px solid #0466AF;
+  border: 2px solid #0466af;
   background-color: transparent;
 }
 
 /* Style the checked state */
 
-.custom-radio:checked+.custom-radio-label::before {
+.custom-radio:checked + .custom-radio-label::before {
   background-color: transparent;
 }
 
 /* Add a smaller inner circle for the checked state */
 
-.custom-radio:checked+.custom-radio-label::after {
-  content: '';
+.custom-radio:checked + .custom-radio-label::after {
+  content: "";
   position: absolute;
   left: 4px;
   top: 50%;
@@ -1541,7 +1533,7 @@ html {
   height: 12px;
   /* Adjust the size here */
   border-radius: 50%;
-  background-color: #0466AF;
+  background-color: #0466af;
 }
 
 /* CSS for positioning navigation buttons */
@@ -1628,8 +1620,6 @@ html {
     display: none;
   }
 }
-
-/* Custom styles */
 
 .transition-transform {
   transition: transform 0.3s ease-in-out;
@@ -1953,4 +1943,3 @@ html {
     gap: 3rem;
   }
 }
-
