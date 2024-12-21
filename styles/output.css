@@ -888,16 +888,16 @@ video {
   width: 2.5rem;
 }
 
+.w-36 {
+  width: 9rem;
+}
+
 .w-4 {
   width: 1rem;
 }
 
 .w-40 {
   width: 10rem;
-}
-
-.w-44 {
-  width: 11rem;
 }
 
 .w-48 {
@@ -931,10 +931,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-36 {
-  width: 9rem;
 }
 
 .max-w-4xl {
@@ -1304,10 +1300,6 @@ video {
   padding-top: 3.5rem;
 }
 
-.pl-4 {
-  padding-left: 1rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -1528,54 +1520,11 @@ html {
   background-color: rgba(4, 102, 175, 0.1);
 }
 
-/* Custom Radio Buttons */
-
-.custom-radio {
-  display: none;
-}
-
-.custom-radio + .custom-radio-label {
-  position: relative;
-  padding-left: 30px;
-  cursor: pointer;
-  font-size: 16px;
-  color: #0466af;
-}
-
-.custom-radio + .custom-radio-label::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 2px solid #0466af;
-  background-color: transparent;
-}
-
-.custom-radio:checked + .custom-radio-label::before {
-  background-color: transparent;
-}
-
-.custom-radio:checked + .custom-radio-label::after {
-  content: "";
-  position: absolute;
-  left: 4px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #0466af;
-}
-
 /* Swiper Navigation Buttons */
 
 .swiper-pagination-bullet {
-  width: 15px !important;
-  height: 15px !important;
+  width: 44px !important;
+  height: 44px !important;
   background-color: #2a3847 !important;
   opacity: 0.5;
   transition: opacity 0.3s;
@@ -1702,12 +1651,12 @@ html {
     margin-bottom: 2.5rem;
   }
 
-  .tiny\:w-80 {
-    width: 20rem;
-  }
-
   .tiny\:w-44 {
     width: 11rem;
+  }
+
+  .tiny\:w-80 {
+    width: 20rem;
   }
 
   .tiny\:flex-row {
@@ -1716,10 +1665,6 @@ html {
 
   .tiny\:flex-nowrap {
     flex-wrap: nowrap;
-  }
-
-  .tiny\:gap-5 {
-    gap: 1.25rem;
   }
 
   .tiny\:p-5 {
@@ -1781,22 +1726,23 @@ html {
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .vsm\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
   .vsm\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .vsm\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .vsm\:pt-\[90px\] {
     padding-top: 90px;
   }
 
-  .vsm\:pl-0 {
-    padding-left: 0px;
+  .vsm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .vsm\:text-\[22px\] {
@@ -1816,11 +1762,6 @@ html {
   .vsm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .vsm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
 
@@ -1952,11 +1893,6 @@ html {
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .sm\:text-xl {

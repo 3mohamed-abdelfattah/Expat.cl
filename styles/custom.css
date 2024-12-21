@@ -70,3 +70,45 @@ input:focus {
 .outline-red-500 {
   outline: 1px solid #bc281a;
 }
+
+/* Custom Radio Buttons */
+.custom-radio {
+  display: none;
+}
+
+.custom-radio+.custom-radio-label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #0466af;
+}
+
+.custom-radio+.custom-radio-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #0466af;
+  background-color: transparent;
+}
+
+.custom-radio:checked+.custom-radio-label::before {
+  background-color: transparent;
+}
+
+.custom-radio:checked+.custom-radio-label::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #0466af;
+}
