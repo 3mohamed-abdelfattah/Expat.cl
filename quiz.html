@@ -123,13 +123,14 @@
                 <img src="./assets/icons/forHeroSection/bigStar.svg" alt="Icon" />
                 <h2 class="font-bold">Trustpilot</h2>
             </div>
+        </div>
     </header>
 
     <div class="SFPro_font relative flex items-center justify-center pt-10 sm:pt-24 overflow-hidden">
         <!-- background pattern -->
         <img src="./assets/images/patterns/pattern3.png" alt="pattern"
             class="absolute right-0 top-0 opacity-30 lg:opacity-100 -z-20" />
-        <div class="max-w-[880px]">
+        <div class="w-full">
             <!-- Header -->
             <div class="text-center mb-6">
                 <p id="stepText" class="text-lg font-medium text-[#2A3847]/75">First up, let’s get to know you!</p>
@@ -158,7 +159,7 @@
             <!-- Form -->
             <form id="multiStepForm">
                 <!-- Step 1 -->
-                <div id="step-1" class="step active mx-5">
+                <div id="step-1" class="step active max-w-[915px] px-5 mx-auto">
                     <h2 class="text-2xl sm:text-[44px] font-bold text-[#2A3847] text-center mt-14 mb-10">A few details
                         to contact
                         you</h2>
@@ -190,7 +191,7 @@
                 </div>
 
                 <!-- Step 2 -->
-                <div id="step-2" class="step mx-5">
+                <div id="step-2" class="step px-5 mx-auto max-w-[915px]">
                     <h2 class="text-2xl sm:text-[44px] sm:leading-10 font-bold text-[#2A3847] text-center mt-14 mb-10">
                         What is the best Chilean visa for you?
                     </h2>
@@ -275,7 +276,7 @@
                 </div>
 
                 <!-- Step 3 -->
-                <div id="step-3" class="step mx-5">
+                <div id="step-3" class="step px-5 mx-auto max-w-[915px]">
                     <h2 class="text-2xl sm:text-[44px] sm:leading-10 font-bold text-[#2A3847] text-center mt-14 mb-10">
                         When is your move to Chile planned?
                     </h2>
@@ -322,15 +323,105 @@
                     </div>
                     <div class="error-message" id="error-step-3">Please select a choice and fill out all additional
                         fields.</div>
+
+
+
+                    <h2 class="text-2xl sm:text-[44px] sm:leading-10 font-bold text-[#2A3847] text-center mt-14 mb-10">
+                        Savings / Income
+                    </h2>
+
+                    <h3 class="font-medium sm:text-xl text-[#2A3847] py-2">You need to have savings / recurring income
+                        to obtain some visas for Chile. Reply to the following questions, so we can
+                        list all the visas you can pretend to.
+                    </h3>
+
+                    <div class="space-y-4 my-10">
+                        <h3 class="font-medium sm:text-xl text-[#2A3847]">Do you have savings/assets?</h3>
+                        <span class="flex justify-between sm:gap-5 gap-2">
+                            <div
+                                class="flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option72" name="options" value="option1">
+                                <label class="cursor-pointer custom-radio-label" for="option72">Real Estate</label>
+                            </div>
+                            <div
+                                class="flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option78" name="options" value="option2">
+                                <label class="cursor-pointer custom-radio-label" for="option78">Cash / Savings</label>
+                            </div>
+                        </span>
+                        <span class="flex justify-between sm:gap-5 gap-2">
+                            <div
+                                class="custom-radio-group flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option79" name="options" value="option1">
+                                <label class="cursor-pointer custom-radio-label" for="option79">Financial
+                                    Investments</label>
+                            </div>
+                            <div
+                                class="custom-radio-group flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option70" name="options" value="option2">
+                                <label class="cursor-pointer custom-radio-label" for="option70">Other</label>
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h3 class="font-medium sm:text-xl text-[#2A3847]">What is the total of your savings/assets (in
+                            US dollars)?
+                        </h3>
+                        <input type="number" id="num2" placeholder="Indicate an estimate of the total amount."
+                            class="w-full text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] focus:outline-none special z-50"
+                            required>
+                    </div>
+
+                    <div class="space-y-4 my-10">
+                        <h3 class="font-medium sm:text-xl text-[#2A3847]">Do you have a recurring income?</h3>
+                        <span class="flex justify-between sm:gap-5 gap-2">
+                            <div
+                                class="flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option82" name="options" value="option1">
+                                <label class="cursor-pointer custom-radio-label" for="option82">Pension</label>
+                            </div>
+                            <div
+                                class="flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option88" name="options" value="option2">
+                                <label class="cursor-pointer custom-radio-label" for="option88">Freelance income</label>
+                            </div>
+                        </span>
+                        <span class="flex justify-between sm:gap-5 gap-2">
+                            <div
+                                class="custom-radio-group flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option89" name="options" value="option1">
+                                <label class="cursor-pointer custom-radio-label" for="option89">Real Estate
+                                    Rentals</label>
+                            </div>
+                            <div
+                                class="custom-radio-group flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option820" name="options" value="option2">
+                                <label class="cursor-pointer custom-radio-label" for="option820">Dividends</label>
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h3 class="font-medium sm:text-xl text-[#2A3847]">What is your average monthly income (in US
+                            dollars)?
+                        </h3>
+                        <input type="number" id="num3" placeholder="Indicate an estimate of the total amount."
+                            class="w-full text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] focus:outline-none special z-50"
+                            required>
+                    </div>
+
+
                 </div>
 
                 <!-- Step 4 -->
-                <div id="step-4" class="step m-5">
+                <div id="step-4" class="step px-5 mx-auto max-w-[915px]">
                     <h2 class="text-2xl sm:text-[44px] sm:leading-10 font-bold text-[#2A3847] text-center mt-14 mb-10">
                         A few questions about your visa
                     </h2>
 
-                    <h3 class="font-medium sm:text-xl text-[#2A3847] py-2">What is your citizenship?</h3>
+                    <h3 class="font-medium sm:text-xl text-[#2A3847] py-2">What is your citizenship?
+                    </h3>
                     <div class="relative">
                         <button id="dropdownButton"
                             class="w-full text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] text-left flex items-center justify-between focus:outline-none">
@@ -359,7 +450,8 @@
 
 
                     <div class="space-y-4 my-10">
-                        <h3 class="font-medium sm:text-xl text-[#2A3847]">Who is coming with you in Chile?</h3>
+                        <h3 class="font-medium sm:text-xl text-[#2A3847]">Who is coming with you in
+                            Chile?</h3>
                         <span class="flex justify-between sm:gap-5 gap-2">
                             <div
                                 class="flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
@@ -369,32 +461,37 @@
                             <div
                                 class="flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option28" name="options" value="option2">
-                                <label class="cursor-pointer custom-radio-label" for="option28">My partner</label>
+                                <label class="cursor-pointer custom-radio-label" for="option28">My
+                                    partner</label>
                             </div>
                         </span>
                         <span class="flex justify-between sm:gap-5 gap-2">
                             <div
                                 class="custom-radio-group flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option29" name="options" value="option1">
-                                <label class="cursor-pointer custom-radio-label" for="option29">My children</label>
+                                <label class="cursor-pointer custom-radio-label" for="option29">My
+                                    children</label>
                             </div>
                             <div
                                 class="custom-radio-group flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option120" name="options" value="option2">
-                                <label class="cursor-pointer custom-radio-label" for="option120">My parents</label>
+                                <label class="cursor-pointer custom-radio-label" for="option120">My
+                                    parents</label>
                             </div>
                         </span>
                         <div
                             class="custom-radio-group flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
                             <input type="radio" class="custom-radio" id="option220" name="options" value="option2">
-                            <label class="cursor-pointer custom-radio-label" for="option220">Other family
+                            <label class="cursor-pointer custom-radio-label" for="option220">Other
+                                family
                                 members</label>
                         </div>
                     </div>
 
 
                     <div class="space-y-4">
-                        <h3 class="font-medium sm:text-xl text-[#2A3847]">How many persons need assistance with their
+                        <h3 class="font-medium sm:text-xl text-[#2A3847]">How many persons need
+                            assistance with their
                             visa?
                         </h3>
                         <input type="number" id="num" placeholder="Indicate the total number, you included"
@@ -406,44 +503,53 @@
                 </div>
 
                 <!-- Step 5 -->
-                <div id="step-5" class="step mx-5">
+                <div id="step-5" class="step px-5 mx-auto max-w-[915px]">
                     <h2 class="text-2xl sm:text-[44px] sm:leading-10 font-bold text-[#2A3847] text-center mt-14 mb-10">
                         The last question!
                     </h2>
                     <h3 class="font-medium sm:text-xl text-center text-[#2A3847]/75">
                         You are almost done.
                     </h3>
-                    <h3 class="font-medium sm:text-xl text-center text-[#2A3847]/75">Let us know if you are interested
+                    <h3 class="font-medium sm:text-xl mx-auto text-center max-w-[600px] text-[#2A3847]/75">
+                        Let us know
+                        if you are interested
                         in visa
                         support.
                         These are paid services, totally optional of course, but that help
                         relocate stress-free.
                     </h3>
                     <div class="space-y-4 my-10">
-                        <h3 class="font-medium sm:text-xl text-center text-[#2A3847]">Are you interested in visa
+                        <h3 class="font-medium sm:text-xl text-center text-[#2A3847]">Are you interested
+                            in visa
                             support?</h3>
-                        <div
-                            class="flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
-                            <input type="radio" class="custom-radio" id="option52" name="options" value="option1">
-                            <label class="cursor-pointer custom-radio-label" for="option52">No, thanks.</label>
-                        </div>
-                        <div
-                            class="flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
-                            <input type="radio" class="custom-radio" id="option58" name="options" value="option2">
-                            <label class="cursor-pointer custom-radio-label" for="option58">I plan to do it on my
-                                own but...</label>
-                        </div>
-                        <div
-                            class="custom-radio-group flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
-                            <input type="radio" class="custom-radio" id="option59" name="options" value="option1">
-                            <label class="cursor-pointer custom-radio-label" for="option59">Yes, talk to a
-                                specialist.</label>
-                        </div>
-                        <div
-                            class="custom-radio-group flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] w-full hover:bg-[#0466AF]/30 cursor-pointer">
-                            <input type="radio" class="custom-radio" id="option50" name="options" value="option2">
-                            <label class="cursor-pointer custom-radio-label" for="option50">Yes, full visa support
-                                would be good.</label>
+                        <div class="flex justify-center flex-wrap gap-5">
+                            <span
+                                class="flex w-full sm:w-[400px] justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] hover:bg-[#0466AF]/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option52" name="options" value="option1">
+                                <label class="cursor-pointer custom-radio-label" for="option52">No,
+                                    thanks.</label>
+                            </span>
+                            <span
+                                class="flex w-full sm:w-[400px] justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] hover:bg-[#0466AF]/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option58" name="options" value="option2">
+                                <label class="cursor-pointer custom-radio-label" for="option58">I plan
+                                    to do it on my
+                                    own but...</label>
+                            </span>
+                            <span
+                                class="custom-radio-group w-full sm:w-[400px] flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] hover:bg-[#0466AF]/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option59" name="options" value="option1">
+                                <label class="cursor-pointer custom-radio-label" for="option59">Yes,
+                                    talk to a
+                                    specialist.</label>
+                            </span>
+                            <span
+                                class="custom-radio-group w-full sm:w-[400px] flex justify-start items-center gap-2 text-[#0466AF] bg-[#0466AF]/10 border-2 border-[#0466AF]/30 px-4 h-[56px] hover:bg-[#0466AF]/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option50" name="options" value="option2">
+                                <label class="cursor-pointer custom-radio-label" for="option50">Yes,
+                                    full visa support
+                                    would be good.</label>
+                            </span>
                         </div>
                     </div>
                     <div class="error-message" id="error-step-5">Please select a final option.</div>
@@ -463,14 +569,14 @@
             </form>
 
             <!-- Thank You Message -->
-            <div class="thank-you-message mx-5" id="thankYouMessage">
-                <h2 class="text-2xl sm:text-[44px] sm:leading-10 font-bold text-[#2A3847] text-center mt-14 mb-10">
+            <div class="thank-you-message mx-auto w-full" id="thankYouMessage">
+                <h2 class="text-2xl px-5 sm:text-[44px] sm:leading-10 font-bold text-[#2A3847] text-center mt-14 mb-10">
                     Thanks! We have received your information.
                 </h2>
-                <h3 class="font-medium sm:text-xl text-center text-[#2A3847]/75">
+                <h3 class="font-medium px-5 sm:text-xl text-center text-[#2A3847]/75">
                     Here are the next steps:
                 </h3>
-                <div class="flex gap-5 text-sm items-center justify-center text-center text-[#2A3847]/75">
+                <div class="flex gap-5 my-2 px-5  text-sm items-center justify-center text-center text-[#2A3847]/75">
                     <span class="flex gap-1 items-center">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -488,8 +594,12 @@
                         <p>Get your visa</p>
                     </span>
                 </div>
+                <button type="button" id="nextStep"
+                    class="w-64 h-16 mt-10 mb-2 sm:text-xl font-bold bg-[#BC281A] text-white hover:bg-red-900 uppercase">
+                    Continue
+                </button>
                 <div
-                    class="flex items-center text-xs justify-center mx-auto mt-2 mb-10 text-left space-x-2 text-[#2A3847]/75 max-w-[340px]">
+                    class="flex items-start text-xs px-5 justify-center mx-auto mt-2 mb-10 text-left space-x-2 text-[#2A3847]/75 max-w-[340px]">
                     <input type="checkbox" id="consent" class="w-4 h-4 border-gray-300 focus:ring focus:ring-blue-300">
                     <label for="consent" class="text-sm">
                         I consent to having my information processed in accordance with your
@@ -497,18 +607,21 @@
                     </label>
                 </div>
 
-
-                <div class="min-w-[420px] w-full mx-auto max-w-[720px]">
+                <!-- Client Review -->
+                <div class="my-5 w-full mx-auto px-5  max-w-[720px]">
                     <div class="SFPro_font flex bg-[#F2F5F6] gap-4 text-[#231F20] p-5">
-                        <p
-                            class="flex justify-center items-center mt-2 font-bold w-10 h-10 shrink-0 bg-[#F5D5D2] rounded-full">
-                            MS</p>
                         <article class="flex flex-col">
-                            <div class="flex justify-between">
-                                <h1 class="font-bold text-lg">Michelle Stone</h1>
-                                <h1 class="text-sm">May 03, 2023</h1>
+                            <div class="flex justify-between items-center">
+                                <span class="flex items-center gap-5">
+                                    <p
+                                        class="flex justify-center items-center font-bold w-10 h-10 shrink-0 bg-[#F5D5D2] rounded-full">
+                                        MS</p>
+                                    <h1 class="font-bold text-base sm:text-lg">Michelle Stone</h1>
+
+                                </span>
+                                <h1 class="text-xs sm:text-sm">May 03, 2023</h1>
                             </div>
-                            <span class="flex items-center gap-1 mb-3">
+                            <span class="flex items-center gap-1 my-3">
                                 <img src="./assets/icons/forReviews/location.svg" alt="Icon" />
                                 <p class="text-black text-xs">CL</p>
                             </span>
@@ -516,19 +629,70 @@
                                 <img src="./assets/icons/forHeroSection/stars.svg" alt="Icon" width="94" />
                                 <img src="./assets/icons/forReviews/virified.svg" alt="Icon" />
                             </span>
-                            <h4 class="my-3 text-left">
+                            <h4 class="my-3 text-sm sm:text-base text-left">
                                 I highly recommend Jérémie and Expat.cl to assist you navigate the Chilean
                                 Immigration
                                 system. Their service is invaluable. I can't imagine attempting to go through this
                                 process myself. And I am thrilled to now be a permanent Chilean resident, thanks to
                                 Jérémie’s hard work, professionalism, and persistence!
                             </h4>
-                            <h3 class="flex items-center text-sm gap-1">
-                                <strong>Date of experience:</strong>
-                                May 03, 2023
-                            </h3>
                         </article>
                     </div>
+                </div>
+
+                <!-- Handbook section -->
+                <div
+                    class="flex gap-5 justify-around items-center flex-col-reverse xl:flex-row bg-[#E6F0F7] mt-10 sm:mt-20 py-20 w-full">
+
+                    <!-- right section -->
+                    <aside class=" px-5 xl:px-20">
+                        <!-- Rated Bar -->
+                        <div class="flex items-center gap-1 sm:gap-2 mb-5 text-left">
+                            <img src="./assets/icons/forHeroSection/stars.svg" alt="Icon" />
+                            <h2 class="text-sm sm:text-base w-fit">Rated <strong>Excellent</strong> (4.7/5) by our
+                                <strong>Clients</strong> on
+                            </h2>
+                            <img src="./assets/icons/forHeroSection/bigStar.svg" alt="Icon" />
+                            <h2 class="font-bold">Trustpilot</h2>
+                        </div>
+
+                        <!-- Head titles -->
+                        <h1 class="SFPro_font text-3xl md:text-[44px] leading-tight text-left">A 260-page
+                            handbook
+                            to help you <strong>Relocate to Chile?</strong></h1>
+                        <h2
+                            class="text-xl text-[#2A3847]/75 max-w-full md:max-w-[597px] font-medium my-3 md:my-[30px] text-left">
+                            Moving abroad is not only about immigration. Do you want a complete guide with tips about
+                            health
+                            insurance, finance,
+                            accomodation, international schools...? I wrote it!
+                        </h2>
+
+                        <button
+                            class="SFPro_font flex items-center max-w-[580px] text-white justify-center gap-1 w-full h-[70px] bg-[#BC281A] sm:text-[22px] font-bold mt-10 mb-7">I
+                            want to know more <img src="./assets/icons/forHeroSection/arrow.svg" alt="Icon" /></button>
+
+
+                        <!-- Client Review Section -->
+                        <article
+                            class="Helvetic_font text-left text-sm sm:text-base flex flex-col max-w-[780px] gap-3 bg-white text-[#231F20] p-5">
+                            <img src="./assets/icons/forHeroSection/stars.svg" alt="Icon" width="94" />
+                            <h4>This isn’t a scam. After reading through the 1st lesson, I will have to say it was VERY
+                                thorough and well written. I
+                                plan to order the rest of Jeremie’s materials.
+                            </h4>
+                            <div class="flex items-center gap-3">
+                                <strong>Renae</strong>
+                                <p class="flex items-center gap-1 text-sm"><img
+                                        src="./assets/icons/forHeroSection/verified.svg" alt="Icon" />Verified</p>
+                            </div>
+                        </article>
+                    </aside>
+
+                    <aside>
+                        <!-- Image Section -->
+                        <img src="./assets/images/handbook/book.png" alt="Handbook" class="w-full" />
+                    </aside>
                 </div>
 
             </div>
