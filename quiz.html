@@ -67,7 +67,7 @@
             </a>
 
             <!-- Rated Bar -->
-            <div class="flex items-center gap-1 sm:gap-2 text-left">
+            <div class="flex flex-wrap tiny:flex-nowrap gap-1 sm:gap-2 text-left text-sm vsm:text-base">
                 <img src="./assets/icons/forHeroSection/stars.svg" alt="Rating Stars Icon" />
                 <h2 class="text-sm sm:text-base w-fit">
                     Rated <strong>Excellent</strong> (4.7/5) by our <strong>Clients</strong> on
@@ -95,22 +95,22 @@
                     <div id="indicator-1" class="w-8 h-8 flex items-center justify-center bg-[#D4DCE4] font-bold">1
                     </div>
                     <!-- Connector -->
-                    <div class="w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
+                    <div class="w-4 vsm:w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
                     <!-- Step 2 -->
                     <div id="indicator-2" class="w-8 h-8 flex items-center justify-center bg-[#D4DCE4] font-bold">2
                     </div>
                     <!-- Connector -->
-                    <div class="w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
+                    <div class="w-4 vsm:w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
                     <!-- Step 3 -->
                     <div id="indicator-3" class="w-8 h-8 flex items-center justify-center bg-[#D4DCE4] font-bold">3
                     </div>
                     <!-- Connector -->
-                    <div class="w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
+                    <div class="w-4 vsm:w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
                     <!-- Step 4 -->
                     <div id="indicator-4" class="w-8 h-8 flex items-center justify-center bg-[#D4DCE4] font-bold">4
                     </div>
                     <!-- Connector -->
-                    <div class="w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
+                    <div class="w-4 vsm:w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
                     <!-- Step 5 -->
                     <div id="indicator-5" class="w-8 h-8 flex items-center justify-center bg-[#D4DCE4] font-bold">5
                     </div>
@@ -121,7 +121,8 @@
             <form id="multiStepForm">
                 <!-- Step 1: Contact Details -->
                 <section id="step-1" class="step active max-w-[915px] px-5 mx-auto">
-                    <h2 class="text-2xl sm:text-[44px] font-bold text-primaryColor text-center mt-14 mb-10">
+                    <h2
+                        class="text-xl tiny:text-2xl sm:text-[44px] font-bold text-primaryColor text-center mt-14 mb-10">
                         A few details to contact you
                     </h2>
                     <div class="space-y-4 z-50">
@@ -158,75 +159,85 @@
                 <!-- Step 2: Visa Options -->
                 <section id="step-2" class="step px-5 mx-auto max-w-[915px]">
                     <h2
-                        class="text-2xl sm:text-[44px] sm:leading-10 font-bold text-primaryColor text-center mt-14 mb-10">
+                        class="text-xl tiny:text-2xl sm:text-[44px] sm:leading-10 font-bold text-primaryColor text-center mt-14 mb-10">
                         What is the best Chilean visa for you?
                     </h2>
-                    <div class="space-y-4 text-sm sm:text-base">
+                    <div class="space-y-4">
                         <!-- Radio options for visa types -->
-                        <div class="flex justify-between sm:gap-5 gap-2">
+                        <div class="flex flex-col tiny:flex-row justify-between sm:gap-5 gap-2">
                             <div
-                                class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-2 vsm:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option1" name="options" value="option1">
-                                <label class="cursor-pointer custom-radio-label" for="option1">Visit the country as a
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option1">Visit the country as a
                                     tourist</label>
                             </div>
                             <div
-                                class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-2 vsm:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option2" name="options" value="option2">
-                                <label class="cursor-pointer custom-radio-label" for="option2">Business / short-term
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option2">Business / short-term
                                     mission</label>
                             </div>
                         </div>
-                        <div class="flex justify-between sm:gap-5 gap-2">
+                        <div class="flex flex-col tiny:flex-row justify-between sm:gap-5 gap-2">
                             <div
-                                class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-2 vsm:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option3" name="options" value="option1">
-                                <label class="cursor-pointer custom-radio-label" for="option3">Work / Create a
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option3">Work / Create a
                                     company</label>
                             </div>
                             <div
-                                class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-2 vsm:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option4" name="options" value="option2">
-                                <label class="cursor-pointer custom-radio-label" for="option4">Invest in Chile</label>
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option4">Invest in Chile</label>
                             </div>
                         </div>
-                        <div class="flex justify-between sm:gap-5 gap-2">
+                        <div class="flex flex-col tiny:flex-row justify-between sm:gap-5 gap-2">
                             <div
-                                class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-2 vsm:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option5" name="options" value="option1">
-                                <label class="cursor-pointer custom-radio-label" for="option5">Study /
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option5">Study /
                                     Internship</label>
                             </div>
                             <div
-                                class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-2 vsm:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option6" name="options" value="option2">
-                                <label class="cursor-pointer custom-radio-label" for="option6">Retire in Chile</label>
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option6">Retire in Chile</label>
                             </div>
                         </div>
-                        <div class="flex justify-between sm:gap-5 gap-2">
+                        <div class="flex flex-col tiny:flex-row justify-between sm:gap-5 gap-2">
                             <div
-                                class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-2 vsm:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option7" name="options" value="option1">
-                                <label class="cursor-pointer custom-radio-label" for="option7">Seek asylum</label>
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option7">Seek asylum</label>
                             </div>
                             <div
-                                class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-2 vsm:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option8" name="options" value="option2">
-                                <label class="cursor-pointer custom-radio-label" for="option8">Live with family already
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option8">Live with family already
                                     in Chile</label>
                             </div>
                         </div>
-                        <div class="flex justify-between sm:gap-5 gap-2">
+                        <div class="flex flex-col tiny:flex-row justify-between sm:gap-5 gap-2">
                             <div
-                                class="custom-radio-group flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                class="custom-radio-group flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-2 vsm:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option9" name="options" value="option1">
-                                <label class="cursor-pointer custom-radio-label" for="option9">Relocate to obtain
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option9">Relocate to obtain
                                     citizenship</label>
                             </div>
                             <div
-                                class="custom-radio-group flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                class="custom-radio-group flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-2 vsm:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option10" name="options" value="option2">
-                                <label class="cursor-pointer custom-radio-label" for="option10">I don't have clear plans
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base" for="option10">I
+                                    don't have clear plans
                                     yet</label>
                             </div>
                         </div>
@@ -252,49 +263,55 @@
                     </h2>
                     <div class="space-y-4">
                         <!-- Radio options for move timing -->
-                        <div class="flex justify-between sm:gap-5 gap-2">
+                        <div class="flex flex-col tiny:flex-row justify-between sm:gap-5 gap-2">
                             <div
                                 class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option11" name="move-timing"
                                     value="already-in-chile">
-                                <label class="cursor-pointer custom-radio-label" for="option11">I am already in
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base" for="option11">I
+                                    am already in
                                     Chile</label>
                             </div>
                             <div
                                 class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option12" name="move-timing"
                                     value="less-than-3-months">
-                                <label class="cursor-pointer custom-radio-label" for="option12">Less than 3
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option12">Less than 3
                                     months</label>
                             </div>
                         </div>
-                        <div class="flex justify-between sm:gap-5 gap-2">
+                        <div class="flex flex-col tiny:flex-row justify-between sm:gap-5 gap-2">
                             <div
                                 class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option13" name="move-timing"
                                     value="3-to-6-months">
-                                <label class="cursor-pointer custom-radio-label" for="option13">3 to 6 months</label>
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base" for="option13">3
+                                    to 6 months</label>
                             </div>
                             <div
                                 class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option14" name="move-timing"
                                     value="6-to-12-months">
-                                <label class="cursor-pointer custom-radio-label" for="option14">6 to 12 months</label>
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base" for="option14">6
+                                    to 12 months</label>
                             </div>
                         </div>
-                        <div class="flex justify-between sm:gap-5 gap-2">
+                        <div class="flex flex-col tiny:flex-row justify-between sm:gap-5 gap-2">
                             <div
                                 class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option15" name="move-timing"
                                     value="more-than-12-months">
-                                <label class="cursor-pointer custom-radio-label" for="option15">More than 12
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option15">More than 12
                                     months</label>
                             </div>
                             <div
                                 class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option16" name="move-timing"
                                     value="dont-know-yet">
-                                <label class="cursor-pointer custom-radio-label" for="option16">I don't know yet</label>
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base" for="option16">I
+                                    don't know yet</label>
                             </div>
                         </div>
                     </div>
@@ -303,7 +320,7 @@
                         fields.</div>
 
                     <h2
-                        class="text-2xl sm:text-[44px] sm:leading-10 font-bold text-primaryColor text-center mt-14 mb-10">
+                        class="text-2xl sm:text-[44px] sm:leading-10 font-bold text-primaryColor text-center mt-14 mb-5 tiny:mb-10">
                         Savings / Income
                     </h2>
 
@@ -313,36 +330,40 @@
                         we can list all the visas you can pretend to.
                     </h3>
 
-                    <div class="space-y-4 my-10">
+                    <div class="space-y-4 my-5 tiny:my-10">
                         <h3 class="font-medium sm:text-xl text-primaryColor">Do you have savings/assets?</h3>
                         <!-- Radio options for savings/assets -->
-                        <div class="flex justify-between sm:gap-5 gap-2">
+                        <div class="flex flex-col tiny:flex-row justify-between sm:gap-5 gap-2">
                             <div
                                 class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option72" name="savings-assets"
                                     value="real-estate">
-                                <label class="cursor-pointer custom-radio-label" for="option72">Real Estate</label>
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option72">Real Estate</label>
                             </div>
                             <div
                                 class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option78" name="savings-assets"
                                     value="cash-savings">
-                                <label class="cursor-pointer custom-radio-label" for="option78">Cash / Savings</label>
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option78">Cash / Savings</label>
                             </div>
                         </div>
-                        <div class="flex justify-between sm:gap-5 gap-2">
+                        <div class="flex flex-col tiny:flex-row justify-between sm:gap-5 gap-2">
                             <div
                                 class="custom-radio-group flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option79" name="savings-assets"
                                     value="financial-investments">
-                                <label class="cursor-pointer custom-radio-label" for="option79">Financial
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option79">Financial
                                     Investments</label>
                             </div>
                             <div
                                 class="custom-radio-group flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option70" name="savings-assets"
                                     value="other">
-                                <label class="cursor-pointer custom-radio-label" for="option70">Other</label>
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option70">Other</label>
                             </div>
                         </div>
                     </div>
@@ -360,33 +381,37 @@
                     <div class="space-y-4 my-10">
                         <h3 class="font-medium sm:text-xl text-primaryColor">Do you have a recurring income?</h3>
                         <!-- Radio options for recurring income -->
-                        <div class="flex justify-between sm:gap-5 gap-2">
+                        <div class="flex flex-col tiny:flex-row justify-between sm:gap-5 gap-2">
                             <div
                                 class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option82" name="recurring-income"
                                     value="pension">
-                                <label class="cursor-pointer custom-radio-label" for="option82">Pension</label>
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option82">Pension</label>
                             </div>
                             <div
                                 class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option88" name="recurring-income"
                                     value="freelance-income">
-                                <label class="cursor-pointer custom-radio-label" for="option88">Freelance income</label>
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option88">Freelance income</label>
                             </div>
                         </div>
-                        <div class="flex justify-between sm:gap-5 gap-2">
+                        <div class="flex flex-col tiny:flex-row justify-between sm:gap-5 gap-2">
                             <div
                                 class="custom-radio-group flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option89" name="recurring-income"
                                     value="real-estate-rentals">
-                                <label class="cursor-pointer custom-radio-label" for="option89">Real Estate
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option89">Real Estate
                                     Rentals</label>
                             </div>
                             <div
                                 class="custom-radio-group flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option820" name="recurring-income"
                                     value="dividends">
-                                <label class="cursor-pointer custom-radio-label" for="option820">Dividends</label>
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option820">Dividends</label>
                             </div>
                         </div>
                     </div>
@@ -437,38 +462,43 @@
                     <div class="space-y-4 my-10">
                         <h3 class="font-medium sm:text-xl text-primaryColor">Who is coming with you to Chile?</h3>
                         <!-- Radio options for travel companions -->
-                        <div class="flex justify-between sm:gap-5 gap-2">
+                        <div class="flex flex-col tiny:flex-row justify-between sm:gap-5 gap-2">
                             <div
                                 class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option22" name="companions" value="me">
-                                <label class="cursor-pointer custom-radio-label" for="option22">Me</label>
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option22">Me</label>
                             </div>
                             <div
                                 class="flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option28" name="companions"
                                     value="partner">
-                                <label class="cursor-pointer custom-radio-label" for="option28">My partner</label>
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base" for="option28">My
+                                    partner</label>
                             </div>
                         </div>
-                        <div class="flex justify-between sm:gap-5 gap-2">
+                        <div class="flex flex-col tiny:flex-row justify-between sm:gap-5 gap-2">
                             <div
                                 class="custom-radio-group flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option29" name="companions"
                                     value="children">
-                                <label class="cursor-pointer custom-radio-label" for="option29">My children</label>
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base" for="option29">My
+                                    children</label>
                             </div>
                             <div
                                 class="custom-radio-group flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option120" name="companions"
                                     value="parents">
-                                <label class="cursor-pointer custom-radio-label" for="option120">My parents</label>
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option120">My parents</label>
                             </div>
                         </div>
                         <div
                             class="custom-radio-group flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
                             <input type="radio" class="custom-radio" id="option220" name="companions"
                                 value="other-family">
-                            <label class="cursor-pointer custom-radio-label" for="option220">Other family
+                            <label class="cursor-pointer custom-radio-label text-xs vsm:text-base" for="option220">Other
+                                family
                                 members</label>
                         </div>
                     </div>
@@ -495,12 +525,13 @@
                     <h3 class="font-medium sm:text-xl text-center text-primaryColor/75">
                         You are almost done.
                     </h3>
-                    <h3 class="font-medium sm:text-xl mx-auto text-center max-w-[600px] text-primaryColor/75">
+                    <h3
+                        class="font-medium text-sm vsm:text-base sm:text-xl mx-auto text-center max-w-[600px] text-primaryColor/75">
                         Let us know if you are interested in visa support. These are paid services, totally optional of
                         course, but that
                         help relocate stress-free.
                     </h3>
-                    <div class="space-y-4 my-10">
+                    <div class="space-y-4 my-5 tiny:my-10">
                         <h3 class="font-medium sm:text-xl text-center text-primaryColor">Are you interested in visa
                             support?</h3>
                         <div class="flex justify-center flex-wrap gap-5">
@@ -509,14 +540,16 @@
                                 class="flex w-full sm:w-[400px] justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option52" name="visa-support"
                                     value="no-thanks">
-                                <label class="cursor-pointer custom-radio-label" for="option52">No, thanks.</label>
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option52">No, thanks.</label>
                             </div>
                             <!-- Radio option: Plan to do it on my own -->
                             <div
                                 class="flex w-full sm:w-[400px] justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option58" name="visa-support"
                                     value="do-it-own">
-                                <label class="cursor-pointer custom-radio-label" for="option58">I plan to do it on my
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base" for="option58">I
+                                    plan to do it on my
                                     own but...</label>
                             </div>
                             <!-- Radio option: Talk to a specialist -->
@@ -524,7 +557,8 @@
                                 class="custom-radio-group w-full sm:w-[400px] flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option59" name="visa-support"
                                     value="talk-specialist">
-                                <label class="cursor-pointer custom-radio-label" for="option59">Yes, talk to a
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option59">Yes, talk to a
                                     specialist.</label>
                             </div>
                             <!-- Radio option: Full visa support -->
@@ -532,7 +566,8 @@
                                 class="custom-radio-group w-full sm:w-[400px] flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] hover:bg-tertiaryColor/30 cursor-pointer">
                                 <input type="radio" class="custom-radio" id="option50" name="visa-support"
                                     value="full-support">
-                                <label class="cursor-pointer custom-radio-label" for="option50">Yes, full visa support
+                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                    for="option50">Yes, full visa support
                                     would be
                                     good.</label>
                             </div>
@@ -546,12 +581,12 @@
                 <div class="mt-6 flex gap-2 sm:gap-5 justify-center items-center sm:mt-12 mb-8 sm:mb-20 text-center">
                     <!-- Back Button -->
                     <button type="button" id="backStep"
-                        class="w-44 sm:w-64 h-16 sm:text-xl font-bold border-4 border-secondaryColor text-secondaryColor hover:bg-secondaryColor hover:text-white uppercase">
+                        class="w-36 tiny:w-44 sm:w-64 h-16 sm:text-xl font-bold border-4 border-secondaryColor text-secondaryColor hover:bg-secondaryColor hover:text-white uppercase">
                         Back
                     </button>
                     <!-- Continue Button -->
                     <button type="button" id="nextStep"
-                        class="w-44 sm:w-64 h-16 sm:text-xl font-bold bg-secondaryColor text-white hover:bg-red-900 uppercase">
+                        class="w-36 tiny:w-44 sm:w-64 h-16 sm:text-xl font-bold bg-secondaryColor text-white hover:bg-red-900 uppercase">
                         Continue
                     </button>
                 </div>
@@ -560,13 +595,14 @@
             <!-- Thank You For Complete Quiz Section -->
             <section class="thank-you-message mx-auto w-full" id="thankYouMessage">
                 <h2
-                    class="text-2xl px-5 sm:text-[44px] sm:leading-10 font-bold text-primaryColor text-center mt-14 mb-10">
+                    class="text-xl tiny:text-2xl px-5 sm:text-[44px] sm:leading-10 font-bold text-primaryColor text-center mt-14 mb-10">
                     Thanks! We have received your information.
                 </h2>
-                <h3 class="font-medium px-5 sm:text-xl text-center text-primaryColor/75">
+                <h3 class="font-medium px-5 text-sm tiny:text-base sm:text-xl text-center text-primaryColor/75">
                     Here are the next steps:
                 </h3>
-                <div class="flex gap-5 my-2 px-5 text-sm items-center justify-center text-center text-primaryColor/75">
+                <div
+                    class="flex gap-5 my-2 px-3 tiny:px-5 text-xs tiny:text-sm items-center justify-center text-center text-primaryColor/75">
                     <!-- Contact Us for Questions -->
                     <span class="flex gap-1 items-center">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -601,17 +637,17 @@
                 </div>
 
                 <!-- Client Review -->
-                <div class="my-5 w-full mx-auto px-5 max-w-[720px]">
+                <div class="my-5 w-full mx-auto px-5 max-w-[720px] text-left">
                     <article class="SFPro_font flex bg-[#F2F5F6] gap-4 text-[#231F20] p-5">
                         <div class="flex flex-col">
                             <div class="flex justify-between items-center">
                                 <span class="flex items-center gap-5">
                                     <p
-                                        class="flex justify-center items-center font-bold w-10 h-10 shrink-0 bg-[#F5D5D2] rounded-full">
+                                        class="flex justify-center items-center text-sm tiny:text-base font-bold w-10 h-10 shrink-0 bg-[#F5D5D2] rounded-full">
                                         MS</p>
-                                    <h1 class="font-bold text-base sm:text-lg">Michelle Stone</h1>
+                                    <h1 class="font-bold text-sm tiny:text-lg">Michelle Stone</h1>
                                 </span>
-                                <h1 class="text-xs sm:text-sm">May 03, 2023</h1>
+                                <h1 class="text-xs vsm:text-base">May 03, 2023</h1>
                             </div>
                             <span class="flex items-center gap-1 my-3">
                                 <img src="./assets/icons/forReviews/location.svg" alt="Location Icon" />
@@ -621,7 +657,7 @@
                                 <img src="./assets/icons/forHeroSection/stars.svg" alt="Stars Icon" width="94" />
                                 <img src="./assets/icons/forReviews/virified.svg" alt="Verified Icon" />
                             </span>
-                            <h4 class="my-3 text-sm sm:text-base text-left">
+                            <h4 class="my-3 text-sm tiny:text-base">
                                 I highly recommend Jérémie and Expat.cl to assist you navigate the Chilean Immigration
                                 system. Their
                                 service is invaluable. I can't imagine attempting to go through this process myself. And
@@ -641,22 +677,24 @@
                     <!-- Right Section -->
                     <aside class="px-5 xl:px-20">
                         <!-- Rated Bar -->
-                        <div class="flex items-center gap-1 sm:gap-2 mb-5 text-left">
-                            <img src="./assets/icons/forHeroSection/stars.svg" alt="Stars Icon" />
-                            <h2 class="text-sm sm:text-base w-fit">Rated <strong>Excellent</strong> (4.7/5) by our
+                        <div class="flex flex-wrap tiny:flex-nowrap items-center gap-1 sm:gap-2 mb-5 text-left">
+                            <img src="./assets/icons/forHeroSection/stars.svg" alt="Icon" />
+                            <h2 class="text-xs tiny:text-sm vsm:text-base w-fit">Rated <strong>Excellent</strong>
+                                (4.7/5) by our
                                 <strong>Clients</strong> on
                             </h2>
-                            <img src="./assets/icons/forHeroSection/bigStar.svg" alt="Big Star Icon" />
+                            <img src="./assets/icons/forHeroSection/bigStar.svg" alt="Icon" />
                             <h2 class="font-bold">Trustpilot</h2>
                         </div>
 
                         <!-- Head Titles -->
-                        <h1 class="SFPro_font text-3xl md:text-[44px] leading-tight text-left">A 260-page handbook to
+                        <h1 class="SFPro_font text-2xl vsm:text-3xl md:text-[44px] leading-tight text-left">A 260-page
+                            handbook to
                             help you
                             <strong>Relocate to Chile?</strong>
                         </h1>
                         <h2
-                            class="text-base sm:text-xl text-primaryColor/75 max-w-full md:max-w-[597px] font-medium my-3 md:my-[30px] text-left">
+                            class="text-base vsm::text-xl text-primaryColor/75 max-w-full md:max-w-[597px] font-medium my-3 md:my-[30px] text-left">
                             Moving abroad is not only about immigration. Do you want a complete guide with tips about
                             health
                             insurance, finance, accommodation, international schools...? I wrote it!
@@ -670,9 +708,10 @@
 
                         <!-- Client Review Section -->
                         <article
-                            class="Helvetic_font text-left text-sm sm:text-base flex flex-col max-w-[780px] gap-3 bg-white text-[#231F20] p-5">
+                            class="Helvetic_font text-left flex flex-col max-w-[780px] gap-3 bg-white text-[#231F20] p-2 tiny:p-5">
                             <img src="./assets/icons/forHeroSection/stars.svg" alt="Stars Icon" width="94" />
-                            <h4>This isn’t a scam. After reading through the 1st lesson, I will have to say it was VERY
+                            <h4 class="text-sm tiny:text-base">This isn’t a scam. After reading through the 1st lesson,
+                                I will have to say it was VERY
                                 thorough and
                                 well written. I plan to order the rest of Jeremie’s materials.</h4>
                             <div class="flex items-center gap-3">
@@ -704,7 +743,8 @@
     </footer>
 
     <!-- Footer for mobile -->
-    <footer class="flex md:hidden SFPro_font bg-primaryColor text-white flex-col items-center p-4">
+    <footer
+        class="flex md:hidden text-sm tiny:text-base SFPro_font bg-primaryColor text-white flex-col items-center p-4">
         <img src="./assets/images/FooterLogo.png" class="mt-5 w-40" alt="Logo" />
         <nav class="flex items-center gap-4 my-5 text-sm">
             <a href="#" class="hover:underline">Privacy Policy</a>

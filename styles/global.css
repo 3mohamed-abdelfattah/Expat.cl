@@ -5,11 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* General Styles */
-* {
-  /* outline: 1px solid red; */
-}
-
 body {
   font-family: "Montserrat", serif;
   margin: 0;
