@@ -53,9 +53,9 @@ function validateStep(step) {
     inputs.forEach(input => {
         if (!input.value) {
             isValid = false;
-            input.classList.add('border-red-500');
+            input.classList.add('border-red-500', 'outline-red-500');
         } else {
-            input.classList.remove('border-red-500');
+            input.classList.remove('border-red-500', 'outline-red-500');
         }
     });
 
@@ -63,6 +63,11 @@ function validateStep(step) {
     errorMessage.style.display = isValid ? 'none' : 'block';
 
     return isValid;
+}
+
+// Function to remove error styles when the user inputs data
+function removeErrorStyles(event) {
+    event.target.classList.remove('border-red-500', 'outline-red-500');
 }
 
 // Event listener for the Next button
@@ -104,6 +109,14 @@ const button = document.getElementById('dropdownButton');
 const dropdownList = document.getElementById('dropdownList');
 button.addEventListener('click', () => {
     dropdownList.classList.toggle('hidden');
+});
+
+// Add event listeners to remove error styles on input change
+steps.forEach(step => {
+    const inputs = step.querySelectorAll('input[required], select[required]');
+    inputs.forEach(input => {
+        input.addEventListener('input', removeErrorStyles);
+    });
 });
 
 // Initialize the first step

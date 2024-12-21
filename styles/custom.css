@@ -1,0 +1,72 @@
+/* Step visibility */
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+/* Completed step styles */
+.step-completed {
+  color: #2a3847;
+  /* Navy color */
+}
+
+/* Step indicator styles for completed and active states */
+.step-indicator-completed {
+  background-color: #2a3847;
+  /* Navy color */
+  color: white;
+}
+
+.step-indicator-active {
+  border: 2px solid #2a3847;
+  /* Navy color */
+  color: #2a3847;
+}
+
+/* Current step indicator style */
+.step-indicator-current {
+  background-color: white;
+  color: #2a3847;
+  border: 2px solid #2a3847;
+}
+
+/* Error message style */
+.error-message {
+  color: #bc281a;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+/* Thank you message style */
+.thank-you-message {
+  display: none;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #2a3847;
+  /* Navy color */
+}
+
+/* Placeholder color for special input fields */
+input.special::placeholder {
+  color: #0465af5b;
+}
+
+/* Focus state for input fields */
+input:focus {
+  border-bottom: 2px solid #0466af;
+  /* Desired color */
+  outline: none;
+  /* Remove default outline */
+}
+
+/* Outline border for invalid input fields */
+.border-red-500 {
+  border-color: #bc281a;
+}
+
+.outline-red-500 {
+  outline: 1px solid #bc281a;
+}
