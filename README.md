@@ -2,6 +2,8 @@
 
 Expat.cl is a comprehensive web platform that provides essential support services for expatriates moving to Chile. This project aims to offer services such as temporary accommodation, quick response to queries, expat support, and tailor-made solutions to ease the transition for individuals and families relocating to Chile.
 
+
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/2d16a28c-ed29-4829-9096-facf99bf5288" width="150">
 </p>
@@ -170,5 +172,7 @@ This project is private and does not permit contributions, modifications, or usa
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
+
 - Mohamed Mohamed - [mohamed.devmaster@gmail.com](mailto:mohamed.devmaster@gmail.com)
 - via [WhatsApp](https://wa.me/201101201745).
+- via [Upwork](https://www.upwork.com/freelancers/~019d1b98220787822b).
