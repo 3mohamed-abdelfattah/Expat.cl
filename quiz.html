@@ -13,7 +13,7 @@
     <title>Expat.cl: Take Quiz</title>
 </head>
 
-<body>
+<body class="flex flex-col justify-between min-h-screen">
     <header class="flex flex-col border-b-4 border-[#F2F5F6]">
         <!-- Top bar with marquee -->
         <div class="SFPro_font bg-primaryColor text-white text-xs font-normal uppercase marquee-container">
@@ -97,22 +97,22 @@
                     <div id="indicator-1" class="w-8 h-8 flex items-center justify-center bg-[#D4DCE4] font-bold">1
                     </div>
                     <!-- Connector -->
-                    <div class="w-4 vsm:w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
+                    <div class="w-4 tiny:w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
                     <!-- Step 2 -->
                     <div id="indicator-2" class="w-8 h-8 flex items-center justify-center bg-[#D4DCE4] font-bold">2
                     </div>
                     <!-- Connector -->
-                    <div class="w-4 vsm:w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
+                    <div class="w-4 tiny:w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
                     <!-- Step 3 -->
                     <div id="indicator-3" class="w-8 h-8 flex items-center justify-center bg-[#D4DCE4] font-bold">3
                     </div>
                     <!-- Connector -->
-                    <div class="w-4 vsm:w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
+                    <div class="w-4 tiny:w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
                     <!-- Step 4 -->
                     <div id="indicator-4" class="w-8 h-8 flex items-center justify-center bg-[#D4DCE4] font-bold">4
                     </div>
                     <!-- Connector -->
-                    <div class="w-4 vsm:w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
+                    <div class="w-4 tiny:w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
                     <!-- Step 5 -->
                     <div id="indicator-5" class="w-8 h-8 flex items-center justify-center bg-[#D4DCE4] font-bold">5
                     </div>
@@ -735,7 +735,7 @@
     </main>
 
     <!-- Footer for desktop -->
-    <footer class="SFPro_font bg-primaryColor text-white hidden md:flex justify-around items-center z-40">
+    <footer class="SFPro_font bg-primaryColor text-white hidden md:flex justify-around items-center z-40 mt-auto">
         <h3>Copyright © 2016-2024 Expat.cl.</h3>
         <img src="./assets/images/FooterLogo.png" class="my-10" alt="Logo" />
         <nav class="flex items-center gap-2 lg:gap-9">
@@ -746,7 +746,7 @@
 
     <!-- Footer for mobile -->
     <footer
-        class="flex md:hidden text-sm tiny:text-base SFPro_font bg-primaryColor text-white flex-col items-center p-4">
+        class="flex md:hidden text-sm tiny:text-base SFPro_font bg-primaryColor text-white flex-col items-center p-4 mt-auto">
         <img src="./assets/images/FooterLogo.png" class="mt-5 w-40" alt="Logo" />
         <nav class="flex items-center gap-4 my-5 text-sm">
             <a href="#" class="hover:underline">Privacy Policy</a>
