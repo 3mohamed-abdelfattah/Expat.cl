@@ -134,7 +134,7 @@
                         class="text-xl tiny:text-2xl sm:text-[44px] font-bold text-primaryColor text-center mt-14 mb-10">
                         A few details to contact you
                     </h2>
-                    <div class="space-y-4 z-50">
+                    <div class="space-y-4 z-50 max-w-[600px] mx-auto">
                         <!-- Input fields for first and last name -->
                         <div class="grid grid-cols-2 gap-4">
                             <input type="text" id="firstName" placeholder="Enter your first name"
@@ -171,7 +171,7 @@
                         class="text-xl tiny:text-2xl sm:text-[44px] sm:leading-10 font-bold text-primaryColor text-center mt-14 mb-10">
                         What is the best Chilean visa for you?
                     </h2>
-                    <div class="space-y-4">
+                    <div class="space-y-4 max-w-[600px] mx-auto">
                         <!-- Radio options for visa types -->
                         <div class="flex flex-col tiny:flex-row justify-between sm:gap-5 gap-2">
                             <div
@@ -265,7 +265,7 @@
                 </section>
 
                 <!-- Step 3: Move Planning -->
-                <section id="step-3" class="step px-5 mx-auto max-w-[915px]">
+                <section id="step-3" class="step px-5 max-w-[600px] mx-auto">
                     <h2
                         class="text-2xl sm:text-[44px] sm:leading-10 font-bold text-primaryColor text-center mt-14 mb-10">
                         When is your move to Chile planned?
@@ -333,7 +333,7 @@
                         Savings / Income
                     </h2>
 
-                    <h3 class="font-medium sm:text-xl text-primaryColor py-2">
+                    <h3 class="font-medium sm:text-xl text-primaryColor text-center py-2">
                         You need to have savings / recurring income to obtain some visas for Chile. Reply to the
                         following questions, so
                         we can list all the visas you can pretend to.
@@ -436,7 +436,7 @@
                 </section>
 
                 <!-- Step 4: Visa Questions -->
-                <section id="step-4" class="step px-5 mx-auto max-w-[915px]">
+                <section id="step-4" class="step px-5 max-w-[600px] mx-auto">
                     <h2
                         class="text-2xl sm:text-[44px] sm:leading-10 font-bold text-primaryColor text-center mt-14 mb-10">
                         A few questions about your visa
@@ -526,7 +526,7 @@
                 </section>
 
                 <!-- Step 5: Final Question -->
-                <section id="step-5" class="step px-5 mx-auto max-w-[915px]">
+                <section id="step-5" class="step px-5 max-w-[660px] mx-auto">
                     <h2
                         class="text-2xl sm:text-[44px] sm:leading-10 font-bold text-primaryColor text-center mt-14 mb-10">
                         The last question!
@@ -540,45 +540,50 @@
                         course, but that
                         help relocate stress-free.
                     </h3>
-                    <div class="space-y-4 my-5 tiny:my-10">
+                    <div class="sm:space-y-4 my-5 tiny:my-10">
                         <h3 class="font-medium sm:text-xl text-center text-primaryColor">Are you interested in visa
                             support?</h3>
-                        <div class="flex justify-center flex-wrap gap-5">
+                        <div class="flex justify-center flex-wrap sm:gap-5">
                             <!-- Radio option: No, thanks -->
-                            <div
-                                class="flex w-full sm:w-[400px] justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] hover:bg-tertiaryColor/30 cursor-pointer">
-                                <input type="radio" class="custom-radio" id="option52" name="visa-support"
-                                    value="no-thanks">
-                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
-                                    for="option52">No, thanks.</label>
-                            </div>
-                            <!-- Radio option: Plan to do it on my own -->
-                            <div
-                                class="flex w-full sm:w-[400px] justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] hover:bg-tertiaryColor/30 cursor-pointer">
-                                <input type="radio" class="custom-radio" id="option58" name="visa-support"
-                                    value="do-it-own">
-                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base" for="option58">I
-                                    plan to do it on my
-                                    own but...</label>
+                            <div class="sm:flex w-full justify-between sm:gap-5 gap-2">
+                                <div
+                                    class="flex w-full sm:max-w-[320px] mb-[10px] sm:mb-0 justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] hover:bg-tertiaryColor/30 cursor-pointer">
+                                    <input type="radio" class="custom-radio" id="option52" name="visa-support"
+                                        value="no-thanks">
+                                    <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                        for="option52">No, thanks.</label>
+                                </div>
+                                <!-- Radio option: Plan to do it on my own -->
+                                <div
+                                    class="flex w-full sm:max-w-[320px] mb-[10px] sm:mb-0 justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] hover:bg-tertiaryColor/30 cursor-pointer">
+                                    <input type="radio" class="custom-radio" id="option58" name="visa-support"
+                                        value="do-it-own">
+                                    <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                        for="option58">I
+                                        plan to do it on my
+                                        own but...</label>
+                                </div>
                             </div>
                             <!-- Radio option: Talk to a specialist -->
-                            <div
-                                class="custom-radio-group w-full sm:w-[400px] flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] hover:bg-tertiaryColor/30 cursor-pointer">
-                                <input type="radio" class="custom-radio" id="option59" name="visa-support"
-                                    value="talk-specialist">
-                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
-                                    for="option59">Yes, talk to a
-                                    specialist.</label>
-                            </div>
-                            <!-- Radio option: Full visa support -->
-                            <div
-                                class="custom-radio-group w-full sm:w-[400px] flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] hover:bg-tertiaryColor/30 cursor-pointer">
-                                <input type="radio" class="custom-radio" id="option50" name="visa-support"
-                                    value="full-support">
-                                <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
-                                    for="option50">Yes, full visa support
-                                    would be
-                                    good.</label>
+                            <div class="sm:flex w-full justify-between sm:gap-5 gap-2">
+                                <div
+                                    class="custom-radio-group mb-[10px] sm:mb-0 w-full sm:max-w-[320px] flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] hover:bg-tertiaryColor/30 cursor-pointer">
+                                    <input type="radio" class="custom-radio" id="option59" name="visa-support"
+                                        value="talk-specialist">
+                                    <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                        for="option59">Yes, talk to a
+                                        specialist.</label>
+                                </div>
+                                <!-- Radio option: Full visa support -->
+                                <div
+                                    class="custom-radio-group w-full mb-[10px] sm:mb-0 sm:max-w-[320px] flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] hover:bg-tertiaryColor/30 cursor-pointer">
+                                    <input type="radio" class="custom-radio" id="option50" name="visa-support"
+                                        value="full-support">
+                                    <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                        for="option50">Yes, full visa support
+                                        would be
+                                        good.</label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -587,15 +592,16 @@
                 </section>
 
                 <!-- Continue and Back Buttons -->
-                <div class="mt-6 flex gap-2 sm:gap-5 justify-center items-center sm:mt-12 mb-8 sm:mb-20 text-center">
+                <div
+                    class="mx-auto px-5 max-w-[600px] mt-6 flex gap-2 sm:gap-5 justify-between items-center sm:mt-12 mb-8 sm:mb-20 text-center">
                     <!-- Back Button -->
                     <button type="button" id="backStep"
-                        class="w-36 tiny:w-44 sm:w-64 h-16 sm:text-xl font-bold border-4 border-secondaryColor text-secondaryColor hover:bg-secondaryColor hover:text-white uppercase">
+                        class="w-full max-w-[266px] h-16 mx-auto sm:text-xl font-bold border-4 border-secondaryColor text-secondaryColor hover:bg-secondaryColor hover:text-white uppercase">
                         Back
                     </button>
                     <!-- Continue Button -->
                     <button type="button" id="nextStep"
-                        class="w-36 tiny:w-44 sm:w-64 h-16 sm:text-xl font-bold bg-secondaryColor text-white hover:bg-red-900 uppercase">
+                        class="w-full max-w-[266px] mx-auto h-16 sm:text-xl font-bold bg-secondaryColor text-white hover:bg-red-900 uppercase">
                         Continue
                     </button>
                 </div>
