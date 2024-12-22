@@ -5,39 +5,48 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextButton = document.querySelector('.next');
 
     let currentIndex = 0;
-    const slideWidth = 350;  // Width of each slide
-    const slideGap = 20;     // Gap between slides
+    let slideWidth = 350;  // Width of each slide
+    let slideGap = 20;       // Initial gap between slides
     const totalSlides = slides.length;
 
     const updateSliderPosition = () => {
         const containerWidth = sliderContainer.parentElement.clientWidth;
 
-        // Check if the viewport width is greater than 1520px
-        if (containerWidth > 1480) {
-            // Hide navigation arrows and stop sliding
-            prevButton.style.display = 'none';
-            nextButton.style.display = 'none';
+        // Update slide gap based on device width
+        slideGap = window.innerWidth > 500 ? 35 : 20;
+        slideWidth = window.innerWidth > 410 ? 350 : 288;
+
+        if (containerWidth > 1680) {
+            // Reduce opacity of navigation arrows and stop sliding
+            prevButton.style.opacity = '0.5';
+            nextButton.style.opacity = '0.5';
             sliderContainer.style.transform = 'translateX(0px)';
             return;
         }
 
         const visibleSlidesCount = Math.floor(containerWidth / (slideWidth + slideGap));
-        const totalWidth = totalSlides * (slideWidth + slideGap) - slideGap;
+        let maxIndex = totalSlides - visibleSlidesCount;
 
-        // Always show the navigation buttons
-        prevButton.style.display = 'flex';
-        nextButton.style.display = 'flex';
+        // If last slide doesn't fully fit, adjust maxIndex further
+        const remainingSpace = containerWidth - (visibleSlidesCount * (slideWidth + slideGap) - slideGap);
+        if (remainingSpace < (slideWidth + slideGap)) {
+            maxIndex = totalSlides - visibleSlidesCount;
+        }
 
-        // Adjust maxIndex to ensure the last slide can be fully visible
-        const maxIndex = Math.max(0, totalSlides - visibleSlidesCount);
         currentIndex = Math.min(currentIndex, maxIndex);
+
+        // Update slider position
         sliderContainer.style.transform = `translateX(${-currentIndex * (slideWidth + slideGap)}px)`;
+
+        // Update button opacity
+        prevButton.style.opacity = currentIndex > 0 ? '1' : '0.5';
+        nextButton.style.opacity = currentIndex < maxIndex ? '1' : '0.5';
     };
 
     const goToNextSlide = () => {
         const containerWidth = sliderContainer.parentElement.clientWidth;
         const visibleSlidesCount = Math.floor(containerWidth / (slideWidth + slideGap));
-        const maxIndex = Math.max(0, totalSlides - visibleSlidesCount);
+        const maxIndex = totalSlides - visibleSlidesCount;
         currentIndex = Math.min(currentIndex + 1, maxIndex);  // Navigate one slide at a time
         updateSliderPosition();
     };
@@ -51,9 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
     nextButton.addEventListener('click', goToNextSlide);
 
     window.addEventListener('resize', updateSliderPosition);
-
-    // Loop through the slides every 5 seconds
-    // setInterval(goToNextSlide, 5000);
 
     // Initial update to set the correct slider position and button visibility
     updateSliderPosition();
