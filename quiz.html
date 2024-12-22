@@ -454,28 +454,36 @@
                     <h3 class="font-medium sm:text-xl text-primaryColor py-2 max-w-[600px] mx-auto">What is your
                         citizenship?</h3>
                     <div class="relative max-w-[600px] mx-auto">
-                        <!-- Dropdown for citizenship selection -->
-                        <button id="dropdownButton"
-                            class="w-full text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] text-left flex items-center justify-between focus:outline-none">
-                            <span>Select an option</span>
-                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <ul id="dropdownList"
-                            class="absolute text-tertiaryColor left-0 w-full bg-white border-2 border-tertiaryColor/30 shadow-lg mt-2 hidden z-50">
-                            <li
-                                class="px-4 py-2 bg-tertiaryColor/10 hover:bg-tertiaryColor/30 border-b-2 border-tertiaryColor/30 cursor-pointer">
-                                Nationality 1</li>
-                            <li
-                                class="px-4 py-2 bg-tertiaryColor/10 hover:bg-tertiaryColor/30 border-b-2 border-tertiaryColor/30 cursor-pointer">
-                                Nationality 2</li>
-                            <li
-                                class="px-4 py-2 bg-tertiaryColor/10 hover:bg-tertiaryColor/30 border-b-2 border-tertiaryColor/30 cursor-pointer">
-                                Nationality 3</li>
-                        </ul>
+                        <!-- Select dropdown for citizenship selection -->
+                        <select id="dropdownSelect"
+                            class="w-full text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] text-left flex items-center justify-between focus:outline-none appearance-none">
+                            <option>Select an option</option>
+                            <option>Afghanistan</option>
+                            <option>Albania</option>
+                            <option>Algeria</option>
+                            <option>Andorra</option>
+                            <option>Angola</option>
+                            <option>Argentina</option>
+                            <option>Armenia</option>
+                            <option>Australia</option>
+                            <option>Austria</option>
+                            <option>Azerbaijan</option>
+                            <option>Bahamas</option>
+                            <option>Bahrain</option>
+                            <option>Bangladesh</option>
+                            <option>Barbados</option>
+                            <option>Belarus</option>
+                            <option>Belgium</option>
+                            <option>Belize</option>
+                            <option>Benin</option>
+                            <option>Bhutan</option>
+                            <option>Bolivia</option>
+                        </select>
+
+                        <svg class="w-4 h-4 absolute top-1/2 right-4 transform -translate-y-1/2 pointer-events-none"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
                     </div>
 
                     <div class="space-y-4 my-10 max-w-[600px] mx-auto">
