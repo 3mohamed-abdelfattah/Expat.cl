@@ -54,19 +54,6 @@ html {
   background-color: rgba(4, 102, 175, 0.1);
 }
 
-/* Swiper Navigation Buttons */
-.swiper-pagination-bullet {
-  width: 15px !important;
-  height: 15px !important;
-  background-color: #2a3847 !important;
-  opacity: 0.5;
-  transition: opacity 0.3s;
-}
-
-.swiper-pagination-bullet-active {
-  opacity: 1;
-}
-
 /* Marquee Animation */
 @keyframes marquee {
   from {

@@ -1,28 +1,26 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Initialize the main Swiper instance for .swiper-container
-    var swiper = new Swiper('.swiper-container', {
-        loop: false, // Do not loop the slides
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true, // Allow pagination bullets to be clickable
-        },
-        slidesPerView: 'auto', // Display multiple slides at once
-        spaceBetween: 10, // Space between each slide in pixels
-        autoplay: {
-            delay: 3500, // Autoplay delay in milliseconds (3 seconds)
-            disableOnInteraction: true, // Continue autoplay even after user interaction
-        },
-        on: {
-            slideChange: function () {
-                // Ensure the swiper instance is fully initialized
-                if (!swiper || !swiper.slides) {
-                    return;
-                }
-            },
-            init: function () {
-                // Emit the slideChange event when initialization is complete
-                this.emit('slideChange');
-            }
-        }
+document.addEventListener('DOMContentLoaded', () => {
+    const sliderContainer = document.querySelector('.slider-container');
+    const slides = document.querySelectorAll('.slide');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+
+    const updateSliderPosition = () => {
+        const slideWidth = slides[0].clientWidth;
+        sliderContainer.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+    };
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
+        updateSliderPosition();
     });
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
+        updateSliderPosition();
+    });
+
+    window.addEventListener('resize', updateSliderPosition);
 });
