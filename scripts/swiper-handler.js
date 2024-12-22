@@ -11,6 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const updateSliderPosition = () => {
         const containerWidth = sliderContainer.parentElement.clientWidth;
+
+        // Check if the viewport width is greater than 1520px
+        if (containerWidth > 1480) {
+            // Hide navigation arrows and stop sliding
+            prevButton.style.display = 'none';
+            nextButton.style.display = 'none';
+            sliderContainer.style.transform = 'translateX(0px)';
+            return;
+        }
+
         const visibleSlidesCount = Math.floor(containerWidth / (slideWidth + slideGap));
         const totalWidth = totalSlides * (slideWidth + slideGap) - slideGap;
 
