@@ -66,44 +66,33 @@ document.addEventListener('DOMContentLoaded', () => {
     updateSliderPosition1();
 
 
-    // Slider 2 - Reviews
+    // Slider 2 - Reviews Slider
     const reviewSliderContainer = document.querySelector('.review-slider-container');
     const reviewSlides = document.querySelectorAll('.review-slide');
     const prevReviewButton = document.querySelector('.prev-review');
     const nextReviewButton = document.querySelector('.next-review');
 
     let reviewCurrentIndex = 0;
-    let reviewSlideWidth = 720;  // Width of each slide
-    let reviewSlideGap = 20;     // Initial gap between slides
+    const reviewSlideGap = 20;     // Gap between slides
     const totalReviewSlides = reviewSlides.length;
 
     const updateReviewSliderPosition = () => {
         const containerWidth = reviewSliderContainer.parentElement.clientWidth;
+        let reviewSlideWidth;
+        let visibleSlidesCount;
 
-        // Update slide width based on screen width
-        if (containerWidth < 1024) {
-            reviewSlideWidth = containerWidth; // 80% of the container width
+        // Determine slide width and visible slides count based on screen width
+        if (window.innerWidth < 1090) {
+            // Below 1090px - show one slide that takes full container width
+            reviewSlideWidth = containerWidth;
+            visibleSlidesCount = 1;
         } else {
-            reviewSlideWidth = 720; // Default width
+            // Above 1090px - show multiple slides
+            reviewSlideWidth = 720; // Default width for larger screens
+            visibleSlidesCount = Math.floor(containerWidth / (reviewSlideWidth + reviewSlideGap));
         }
 
-        if (containerWidth > 1680) {
-            // Reduce opacity of navigation arrows and stop sliding
-            prevReviewButton.style.opacity = '0.5';
-            nextReviewButton.style.opacity = '0.5';
-            reviewSliderContainer.style.transform = 'translateX(0px)';
-            return;
-        }
-
-        const visibleSlidesCount = Math.floor(containerWidth / (reviewSlideWidth + reviewSlideGap));
-        let maxIndex = totalReviewSlides - visibleSlidesCount;
-
-        // If last slide doesn't fully fit, adjust maxIndex further
-        const remainingSpace = containerWidth - (visibleSlidesCount * (reviewSlideWidth + reviewSlideGap) - reviewSlideGap);
-        if (remainingSpace < (reviewSlideWidth + reviewSlideGap)) {
-            maxIndex = totalReviewSlides - visibleSlidesCount;
-        }
-
+        const maxIndex = totalReviewSlides - visibleSlidesCount;
         reviewCurrentIndex = Math.min(reviewCurrentIndex, maxIndex);
 
         // Update slider position
@@ -112,26 +101,30 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update button opacity
         prevReviewButton.style.opacity = reviewCurrentIndex > 0 ? '1' : '0.5';
         nextReviewButton.style.opacity = reviewCurrentIndex < maxIndex ? '1' : '0.5';
+
+        // Update individual slide widths
+        reviewSlides.forEach(slide => {
+            slide.style.width = `${reviewSlideWidth}px`;
+        });
     };
 
     const goToNextReviewSlide = () => {
-        const containerWidth = reviewSliderContainer.parentElement.clientWidth;
-        const visibleSlidesCount = Math.floor(containerWidth / (reviewSlideWidth + reviewSlideGap));
+        const visibleSlidesCount = window.innerWidth < 1090 ? 1 : Math.floor(reviewSliderContainer.parentElement.clientWidth / (720 + reviewSlideGap));
         const maxIndex = totalReviewSlides - visibleSlidesCount;
-        reviewCurrentIndex = Math.min(reviewCurrentIndex + 1, maxIndex);  // Navigate one slide at a time
+        reviewCurrentIndex = Math.min(reviewCurrentIndex + 1, maxIndex);
         updateReviewSliderPosition();
     };
 
     const goToPrevReviewSlide = () => {
-        reviewCurrentIndex = Math.max(reviewCurrentIndex - 1, 0);  // Navigate one slide at a time
+        reviewCurrentIndex = Math.max(reviewCurrentIndex - 1, 0);
         updateReviewSliderPosition();
     };
 
+    // Add event listeners
     prevReviewButton.addEventListener('click', goToPrevReviewSlide);
     nextReviewButton.addEventListener('click', goToNextReviewSlide);
-
     window.addEventListener('resize', updateReviewSliderPosition);
 
-    // Initial update to set the correct slider position and button visibility
+    // Initial update
     updateReviewSliderPosition();
 });

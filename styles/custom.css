@@ -1,3 +1,5 @@
+/* Style For Custom inputs or labels or sidlers */
+
 /* Step visibility */
 .step {
   display: none;
@@ -111,4 +113,61 @@ input:focus {
   height: 12px;
   border-radius: 50%;
   background-color: #0466af;
+}
+
+/* Custom Sliders */
+.review-slider-container {
+  display: flex;
+  gap: 20px;
+  /* Fixed gap between slides */
+  padding: 0;
+  /* Remove any unwanted padding */
+  margin: 0 auto;
+  /* Center the container */
+  width: 100%;
+  /* Full width */
+  max-width: 100%;
+  /* Ensure it doesn't exceed screen width */
+}
+
+.review-slide {
+  flex: 0 0 auto;
+  /* Prevent shrinking and expanding */
+  width: 100%;
+  /* Full width for single slide on small screens */
+  margin: 0;
+  /* Remove any margins */
+}
+
+/* Modify the main container */
+#reviews .relative {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 1090px) {
+  .review-slider-container {
+    padding: 0;
+    /* Remove padding on small screens */
+  }
+
+  .review-slide {
+    width: 100% !important;
+  }
+}
+
+/* Modify navigation buttons */
+.prev-review,
+.next-review {
+  z-index: 10;
+  /* Ensure buttons are above the content */
+}
+
+/* Modify the main slider container */
+section#reviews {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
 }
