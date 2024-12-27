@@ -168,8 +168,16 @@ Ensure you have the following installed on your local machine:
 ## Contributing
 This project is private and does not permit contributions, modifications, or usage by others. Thank you for respecting these terms.
 
-## License
-Distributed under the MIT License. See `LICENSE` for more information.
+# Project Rights
+
+This project is protected under the **Creative Commons Attribution-NonCommercial-NoDerivs 4.0** license. It is only permitted to view the project without any rights to modify, use, or download it.
+
+## Terms:
+1. The project is for demonstration purposes only and cannot be used commercially.
+2. The code cannot be reused in other projects.
+3. Distribution or modification of the project is not allowed.
+
+[Read the full license text here](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode).
 
 ## Contact
 
