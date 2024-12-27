@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  outline: 1px solid salmon;
+}
+
 body {
   font-family: "Montserrat", serif;
   margin: 0;
@@ -40,7 +44,14 @@ html {
 }
 
 .bg-footerCover {
-  background-image: url("../assets/images/for_landing/footer.png");
+  background-image: url("../assets/images/for_landing/leaveHeadache.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-residencyCover {
+  background-image: url("../assets/images/for_landing/getResidency.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

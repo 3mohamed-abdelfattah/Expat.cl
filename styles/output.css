@@ -753,6 +753,11 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -1138,6 +1143,10 @@ video {
   justify-content: space-evenly;
 }
 
+.justify-stretch {
+  justify-content: stretch;
+}
+
 .gap-1 {
   gap: 0.25rem;
 }
@@ -1184,6 +1193,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-clip {
+  overflow: clip;
 }
 
 .whitespace-nowrap {
@@ -1371,6 +1384,11 @@ video {
   padding-bottom: 5rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pb-14 {
   padding-bottom: 3.5rem;
 }
@@ -1488,6 +1506,11 @@ video {
   color: rgb(35 31 32 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\#5F6A75\] {
+  --tw-text-opacity: 1;
+  color: rgb(95 106 117 / var(--tw-text-opacity, 1));
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
@@ -1563,6 +1586,10 @@ video {
   transition-duration: 500ms;
 }
 
+* {
+  outline: 1px solid salmon;
+}
+
 body {
   font-family: "Montserrat", serif;
   margin: 0;
@@ -1601,7 +1628,14 @@ html {
 }
 
 .bg-footerCover {
-  background-image: url("../assets/images/for_landing/footer.png");
+  background-image: url("../assets/images/for_landing/leaveHeadache.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-residencyCover {
+  background-image: url("../assets/images/for_landing/getResidency.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1978,6 +2012,10 @@ html {
 
   .sm\:max-w-\[320px\] {
     max-width: 320px;
+  }
+
+  .sm\:max-w-\[449px\] {
+    max-width: 449px;
   }
 
   .sm\:max-w-\[474px\] {
