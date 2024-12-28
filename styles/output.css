@@ -1721,7 +1721,7 @@ video {
 }
 
 * {
-  outline: 1px solid salmon;
+  /* outline: 1px solid salmon; */
 }
 
 body {
@@ -2000,6 +2000,10 @@ html {
     margin-top: 1.25rem;
   }
 
+  .vsm\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .vsm\:block {
     display: block;
   }
@@ -2040,6 +2044,10 @@ html {
 
   .vsm\:items-center {
     align-items: center;
+  }
+
+  .vsm\:gap-8 {
+    gap: 2rem;
   }
 
   .vsm\:overflow-auto {
@@ -2209,13 +2217,13 @@ html {
     width: auto;
   }
 
-  .sm\:w-full {
-    width: 100%;
-  }
-
   .sm\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .sm\:w-full {
+    width: 100%;
   }
 
   .sm\:max-w-\[200px\] {
