@@ -99,11 +99,89 @@
         </div>
     </nav>
 
+    <!-- Contact Us Section -->
+    <section class="SFPro_font flex flex-col sm:flex-row justify-center items-start gap-5 m-5">
 
+        <!-- Contact Us Form -->
+        <div class="flex flex-col items-start justify-center w-full sm:w-fit lg:my-20">
+            <h1 class="text-4xl md:text-6xl font-bold text-primaryColor mb-5 md:mb-16">Contact us</h1>
+            <p class="text-xl md:text-2xl font-bold text-primaryColor">How can we help you today?</p>
 
+            <!-- Form -->
+            <form action="#" method="POST" class="flex flex-col gap-5 mt-10 w-full xl:w-[598px]">
+                <input type="text" name="name" placeholder="Name"
+                    class="w-full text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] focus:outline-none special z-50"
+                    required />
+                <input type="email" name="email" placeholder="Email"
+                    class="w-full text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] focus:outline-none special z-50"
+                    required />
+                <input type="text" name="subject" placeholder="Subject"
+                    class="w-full text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] focus:outline-none special z-50"
+                    required />
+                <textarea name="message" placeholder="Your message here" rows="7"
+                    class="w-full text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 focus:outline-none special z-50"></textarea>
 
+                <!-- Consent Checkbox -->
+                <div class="SFPro_font flex items-center mt-2 mb-7 text-left space-x-2 text-primaryColor/75">
+                    <label class="container text-sm vsm:text-base">I have read and agree with the conditions and the
+                        privacy
+                        policy.
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
 
+                <!-- Submit Button -->
+                <button
+                    class="SFPro_font flex items-center mx-auto text-white justify-center gap-1 w-full h-[56px] bg-secondaryColor sm:text-[22px] font-bold">
+                    SEND
+                </button>
+            </form>
+        </div>
 
+        <!-- Contact Us Details -->
+        <div class="flex flex-col items-start justify-center lg:my-[203px] xl:max-w-[597px]">
+            <h1 class="text-xl md:text-2xl font-bold text-primaryColor">Contact Details</h1>
+            <p class="md:text-lg text-primaryColor my-5 md:my-8">This website is operated by 77Leads.</p>
+
+            <!-- Information / Support -->
+            <aside class="flex justify-between items-start gap-8">
+                <div class="max-w-[282.5px]">
+                    <h2 class="md:text-lg font-bold text-primaryColor">*Information / Support*</h2>
+                    <p class="md:text-lg text-primaryColor mt-6">
+                        We advise you to send your request through the form for a faster reply. You can also write us to
+                        contact@asylio.com
+                    </p>
+                </div>
+
+                <!-- Partnerships / Sales -->
+                <div class="max-w-[282.5px]">
+                    <h2 class="md:text-lg font-bold text-primaryColor">*Partnerships / Sales*</h2>
+                    <p class="md:text-lg text-primaryColor mt-6">
+                        For information about promoting a product/service, feel free to reach out, or visit 77leads.com
+                        for
+                        more information.
+                    </p>
+                </div>
+            </aside>
+
+            <!-- Company Address -->
+            <div class="my-8">
+                <h2 class="md:text-lg font-bold text-primaryColor">*Company Address*</h2>
+                <p class="md:text-lg text-primaryColor mt-6">
+                    77Leads <br />
+                    2810 N Church St #38002 <br />
+                    Wilmington, DE, 19802-4447
+                </p>
+            </div>
+
+            <!-- Google Maps Embed -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12191.37147944886!2d-75.52819422282683!3d39.75329946323966!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDQ1JzExLjkiTiA3NcKwMzEnNDAuNiJX!5e0!3m2!1sar!2sus!4v1672433434983!5m2!1sar!2sus"
+                height="349" style="border:0;" allowfullscreen="false" loading="lazy" class="w-full max-w-[597px]"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
 
     <!-- Footer for desktop -->
     <footer class="SFPro_font bg-primaryColor text-white hidden md:flex justify-around items-center">
