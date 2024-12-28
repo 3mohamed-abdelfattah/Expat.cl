@@ -100,9 +100,72 @@
     </nav>
 
     <!-- Hero Section About Website -->
-    <section class="flex flex-col md:flex-row">
+    <section class="flex flex-col sm:flex-row">
+        <!-- Left side image and quote -->
+        <div class="relative w-full sm:min-w-2/5">
+            <img src="../assets/images/for_about/hero.png" alt="About Image"
+                class="w-full h-full sm:min-w-2/5 object-cover" />
+            <!-- Quote Overlay -->
+            <span
+                class="SFPro_font absolute right-6 sm:-right-2 xl:-right-5 2xl:-right-[80px] -bottom-9 sm:bottom-8 z-40 flex flex-col bg-[#F2F5F6] p-2 sm:p-5 lg:p-8">
+                <img src="../assets/icons/forAboutPage/quote.svg" alt="Quote Icon" class="w-56 lg:w-auto mx-auto" />
+                <em class="sm:text-xl lg:text-2xl font-medium text-center mt-3 mb-1 sm:mt-8 sm:mb-5">This is a really
+                    cool quote</em>
+                <p class="text-sm sm:text-base lg:text-lg text-right">Famous guy</p>
+            </span>
+        </div>
 
+        <!-- Right side section -->
+        <aside
+            class="flex flex-col justify-center items-center my-12 text-center sm:text-left relative px-5 w-full text-primaryColor overflow-hidden">
+            <!-- Head titles -->
+            <h1
+                class="SFPro_font text-[34px] md:text-[44px] leading-tight w-full mt-5 sm:mt-0 sm:max-w-[597px] font-bold">
+                About Website
+            </h1>
 
+            <!-- Descriptions -->
+            <span class="SFPro_font my-5 md:my-16 flex flex-col gap-3 text-left sm:gap-8">
+                <!-- first description -->
+                <p class="md:text-lg text-primaryColor/75 max-w-[597px]">
+                    This is a small description to indroduce the article. This is a small description to indroduce the
+                    article. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna
+                    aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco
+                </p>
+                <!-- second description -->
+                <p class="md:text-lg text-primaryColor/75 max-w-[597px]">
+                    This is a small description to indroduce the article. This is a small description to indroduce the
+                    article. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna
+                    aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco
+                </p>
+            </span>
+
+            <div class="flex flex-col items-center sm:items-start w-full max-w-[597px] mt-5">
+                <!-- Call to Action -->
+                <a href="../pages/quiz.html" class="w-full sm:max-w-[474px]">
+                    <button
+                        class="SFPro_font px-2 w-full max-w-[474px] flex mx-auto items-center justify-center gap-1 h-[70px] text-white bg-secondaryColor text-sm tiny:text-base md:text-[22px] font-bold mb-[10px]">
+                        Start the process
+                        <img src="../assets/icons/forHeroSection/arrow.svg" alt="Icon" />
+                    </button>
+                </a>
+
+                <!-- Rated Bar -->
+                <div class="flex items-center gap-2 mb-5 text-left max-w-[345px] vsm:max-w-max">
+                    <img src="../assets/icons/forHeroSection/stars.svg" alt="Icon" />
+                    <p class="font-bold text-xs tiny:text-sm md:text-base">
+                        This service is rated 4.6/5.0 by 100+ foreigners
+                    </p>
+                </div>
+
+            </div>
+        </aside>
     </section>
 
     <!-- Footer for desktop -->
@@ -127,5 +190,7 @@
     </footer>
 
 </body>
+
+<script src="../scripts/header-handler.js"></script>
 
 </html>
