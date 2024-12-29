@@ -1,4 +1,4 @@
-/* Style For Custom inputs or labels or sidlers */
+/* Style For Custom Inputs, Labels, or Sliders */
 
 /* Step visibility */
 .step {
@@ -83,7 +83,7 @@ input:focus {
   display: none;
 }
 
-.custom-radio + .custom-radio-label {
+.custom-radio+.custom-radio-label {
   position: relative;
   padding-left: 30px;
   cursor: pointer;
@@ -91,7 +91,7 @@ input:focus {
   color: #0466af;
 }
 
-.custom-radio + .custom-radio-label::before {
+.custom-radio+.custom-radio-label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -104,11 +104,11 @@ input:focus {
   background-color: transparent;
 }
 
-.custom-radio:checked + .custom-radio-label::before {
+.custom-radio:checked+.custom-radio-label::before {
   background-color: transparent;
 }
 
-.custom-radio:checked + .custom-radio-label::after {
+.custom-radio:checked+.custom-radio-label::after {
   content: "";
   position: absolute;
   left: 4px;
@@ -213,7 +213,7 @@ section#reviews {
 }
 
 /* When the checkbox is checked, add a white background */
-.container input:checked ~ .checkmark {
+.container input:checked~.checkmark {
   background-color: white;
 }
 
@@ -225,7 +225,7 @@ section#reviews {
 }
 
 /* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
+.container input:checked~.checkmark:after {
   display: block;
 }
 
