@@ -36,12 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         currentIndex1 = Math.min(currentIndex1, maxIndex1);
 
-        // Update slider position
+        // Update button opacity and visibility
         sliderContainer1.style.transform = `translateX(${-currentIndex1 * (slideWidth1 + slideGap1)}px)`;
 
         // Update button opacity
         prevButton1.style.opacity = currentIndex1 > 0 ? '1' : '0.5';
+        // prevButton1.style.visibility = currentIndex1 > 0 ? 'visible' : 'hidden'; // Uncomment to hide button when not needed
+
         nextButton1.style.opacity = currentIndex1 < maxIndex1 ? '1' : '0.5';
+        // nextButton1.style.visibility = currentIndex1 < maxIndex ? 'visible' : 'hidden'; // Uncomment to hide button when not needed
+
     };
 
     const goToNextSlide1 = () => {
@@ -98,9 +102,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update slider position
         reviewSliderContainer.style.transform = `translateX(${-reviewCurrentIndex * (reviewSlideWidth + reviewSlideGap)}px)`;
 
-        // Update button opacity
+        // Update button opacity and visibility
         prevReviewButton.style.opacity = reviewCurrentIndex > 0 ? '1' : '0.5';
+        // prevReviewButton.style.visibility = reviewCurrentIndex > 0 ? 'visible' : 'hidden'; // Uncomment to hide button when not needed
+
         nextReviewButton.style.opacity = reviewCurrentIndex < maxIndex ? '1' : '0.5';
+        // nextReviewButton.style.visibility = reviewCurrentIndex < maxIndex ? 'visible' : 'hidden'; // Uncomment to hide button when not needed
 
         // Update individual slide widths
         reviewSlides.forEach(slide => {
