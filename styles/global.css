@@ -57,6 +57,13 @@ html {
   background-position: center;
 }
 
+.bg-coverBlog {
+  background-image: url("../assets/images/for_blog/blog2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 @media (min-width: 1024px) {
   .bg-residencyCover {
     background-image: url("../assets/images/for_landing/getResidency.png");
