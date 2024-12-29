@@ -2046,10 +2046,6 @@ html {
     align-items: center;
   }
 
-  .vsm\:gap-8 {
-    gap: 2rem;
-  }
-
   .vsm\:overflow-auto {
     overflow: auto;
   }
