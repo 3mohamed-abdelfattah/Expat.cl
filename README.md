@@ -40,81 +40,211 @@ Expat.cl is a comprehensive web platform that provides essential support service
 
 ---
 
+
+# Code Sections Numbering
+
+## Home Page (`index.html`)
+| Section Name                                  | Line Number |
+|-----------------------------------------------|-------------|
+| Top Bar                                       | 17          |
+| Main Header & Navigation                      | 58          |
+| Hero Section                                  | 90          |
+| Counters Numbers Section                      | 187         |
+| How It Works Section                          | 208         |
+| How Expat.cl Can Help Section                 | 255         |
+| Need Help Slider Section                      | 382         |
+| Don't Just Slider Section                     | 531         |
+| Still Have Questions Section                  | 651         |
+| Move to Chile, Leave the Headache Section     | 804         |
+| Get Residency Section                         | 879         |
+| Who Qualifies Section                         | 1102        |
+| Footer                                        | 1152        |
+
+## About Us Page (Version 1)
+| Section Name                                  | Line Number |
+|-----------------------------------------------|-------------|
+| Top Bar                                       | 18          |
+| Main Header & Navigation                      | 59          |
+| Hero Section                                  | 102         |
+| Who Is Behind Website Section                 | 178         |
+| Footer                                        | 421         |
+
+## About Us Page (Version 2)
+| Section Name                                  | Line Number |
+|-----------------------------------------------|-------------|
+| Top Bar                                       | 18          |
+| Main Header & Navigation                      | 59          |
+| Hero Section                                  | 102         |
+| Who Is Behind Website Section                 | 181         |
+| Footer                                        | 424         |
+
+## Blog Category Page
+| Section Name                                  | Line Number |
+|-----------------------------------------------|-------------|
+| Top Bar                                       | 18          |
+| Main Header & Navigation                      | 59          |
+| Hero Section                                  | 102         |
+| Articles & Form Section                       | 109         |
+| Footer                                        | 307         |
+
+## Blog Page
+| Section Name                                  | Line Number |
+|-----------------------------------------------|-------------|
+| Top Bar                                       | 18          |
+| Main Header & Navigation                      | 59          |
+| Blog & Form Section                           | 106         |
+| Book Visa Consultation Side Form              | 252         |
+| Footer                                        | 382         |
+
+## Contact Us Page
+| Section Name                                  | Line Number |
+|-----------------------------------------------|-------------|
+| Top Bar                                       | 18          |
+| Main Header & Navigation                      | 59          |
+| Contact Us Section                            | 102         |
+| Footer                                        | 186         |
+
+## Quiz Page
+| Section Name                                  | Line Number |
+|-----------------------------------------------|-------------|
+| Top Bar                                       | 18          |
+| Main Header & Navigation                      | 64          |
+| Step Indicator                                | 100         |
+| Step 1: Contact Details                       | 132         |
+| Step 2: Visa Options                          | 170         |
+| Step 3: Move Planning                         | 272         |
+| Step 4: Visa Questions                        | 448         |
+| Step 5: Final Question                        | 551         |
+| Continue and Back Buttons                     | 618         |
+| Thank You for Completing Quiz Section         | 635         |
+| Handbook Section                              | 712         |
+| Footer                                        | 775         |
+
+
 ## Project Structure
 The project structure is organized to separate concerns and ensure maintainability:
 
 ```
 └── 📁EXPAT
-    └── 📁assets                # Contains all static assets such as fonts, icons, and images
-        └── 📁fonts            # Font files used in the project
+    └── 📁assets
+        └── 📁fonts
+            └── Montserrat-Bold.ttf
+            └── Montserrat-Medium.ttf
+            └── Montserrat-Regular.ttf
             └── Montserrat-VariableFont_wght.ttf
             └── SFProDisplay-Bold.woff2
             └── SFProDisplay-Medium.woff2
             └── SFProDisplay-Regular.woff2
-        └── 📁icons            # Icon files used in various sections of the project
-            └── 📁forHeader    # Icons specifically used in the header
+        └── 📁icons
+            └── 📁forAboutPage
+                └── linkedin.svg
+                └── quote.svg
+                └── x.svg
+            └── 📁forBlog
+                └── home.svg
+                └── lock.svg
+                └── wallet.svg
+                └── work.svg
+            └── 📁forHeader
                 └── response.svg
                 └── support.svg
                 └── tailor.svg
                 └── temporary.svg
-            └── 📁forHeroSection # Icons used in the Hero Section
+            └── 📁forHeroSection
                 └── arrow.svg
                 └── bigStar.svg
                 └── check.svg
                 └── lock.svg
                 └── stars.svg
                 └── verified.svg
-            └── 📁forHowWorks  # Icons used in the "How It Works" section
+            └── 📁forHowWorks
                 └── quiz.svg
                 └── walkThrough.svg
                 └── whichVisa.svg
-            └── 📁forReviews   # Icons used in the Reviews section
+            └── 📁forReviews
                 └── location.svg
                 └── virified.svg
-        └── 📁images           # Image files used throughout the project
-            └── FooterLogo.png # Logo used in the footer
-            └── 📁for_landing  # Images specifically used in the landing page
-                └── footer.png
+            └── 📁forWhoQualifies
+                └── children.svg
+                └── fiance.svg
+                └── handicapped.svg
+                └── parents.svg
+                └── spouse.svg
+        └── 📁images
+            └── FooterLogo.png
+            └── 📁for_about
                 └── hero.png
-                └── 📁slider   # Images used in the slider component
+            └── 📁for_blog
+                └── blog1.png
+                └── blog2.png
+                └── blog3.png
+                └── blog4.png
+            └── 📁for_category
+                └── category1.png
+                └── category2.png
+                └── category3.png
+                └── category4.png
+                └── category5.png
+                └── category6.png
+                └── category7.png
+                └── category8.png
+                └── hero.png
+            └── 📁for_landing
+                └── getResidency.png
+                └── hero.png
+                └── leaveHeadache.png
+                └── 📁slider
                     └── slide1.png
                     └── slide2.png
                     └── slide3.png
                     └── slide4.png
                 └── town.png
-            └── 📁handbook     # Images used in the handbook section
+            └── 📁founders
+                └── person1.png
+                └── person2.png
+                └── person3.png
+            └── 📁handbook
                 └── book.png
-            └── Logo.png       # Main logo of the project
-            └── 📁ourClients   # Logos of client companies
+            └── Logo.png
+            └── 📁ourClients
                 └── airbus.svg
                 └── cegelec.svg
                 └── fao.svg
                 └── korea.svg
+                └── koreaDark.svg
                 └── novo.svg
                 └── quantum.svg
                 └── vinci.svg
-            └── 📁patterns     # Pattern images used for background or design elements
+            └── 📁patterns
                 └── pattern.png
                 └── pattern2.png
                 └── pattern3.png
-            └── symbol.png     # A symbol image for Website Bar logo
-    └── 📁scripts               # JavaScript files for handling various functionalities
-        └── header-handler.js  # Script to handle header interactions
-        └── questions-handler.js # Script to handle questions interactions
-        └── quiz-handler.js    # Script to handle quiz functionalities
-        └── swiper-handler.js  # Script to handle swiper/slider functionalities
-    └── 📁styles                # CSS files for styling the project
-        └── custom.css         # Custom CSS styles ( Custom Placeholder, Select, check,.. )
-        └── fonts.css          # Font-related CSS styles
-        └── global.css         # Global CSS styles
-        └── output.css         # CSS output from a preprocessor (Tailwind CSS)
-    └── .gitignore             # Git ignore file specifying which files to ignore in version control
-    └── index.html             # Main HTML file for the project ( landing page )
-    └── package-lock.json      # Automatically generated file for locking dependencies versions
-    └── package.json           # Contains project metadata and dependencies
-    └── postcss.config.js      # Configuration file for PostCSS
-    └── quiz.html              # HTML file for the quiz pages
-    └── tailwind.config.js     # Configuration file for Tailwind CSS
+            └── symbol.png
+    └── 📁pages
+        └── about-v2.html
+        └── about.html
+        └── blog-category.html
+        └── blog.html
+        └── contact-us.html
+        └── quiz.html
+    └── 📁scripts
+        └── header-handler.js
+        └── questions-handler.js
+        └── quiz-handler.js
+        └── swiper-handler.js
+    └── 📁styles
+        └── custom.css
+        └── fonts.css
+        └── global.css
+        └── output.css
+    └── .gitignore
+    └── index.html
+    └── LICENSE
+    └── package-lock.json
+    └── package.json
+    └── postcss.config.js
+    └── README.md
+    └── tailwind.config.js
 ```
 ---
 
