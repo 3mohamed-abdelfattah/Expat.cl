@@ -1,3 +1,5 @@
+/* Import custom fonts */
+
 /* Font Face Definitions */
 
 /* SF Pro Font Bold */
@@ -889,10 +891,6 @@ video {
   margin-top: 2.5rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
 .mt-14 {
   margin-top: 3.5rem;
 }
@@ -1100,10 +1098,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-5 {
-  width: 1.25rem;
 }
 
 .max-w-4xl {
@@ -1609,11 +1603,6 @@ video {
   line-height: 1;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-\[22px\] {
   font-size: 22px;
 }
@@ -1624,10 +1613,6 @@ video {
 
 .text-\[34px\] {
   font-size: 34px;
-}
-
-.text-\[44px\] {
-  font-size: 44px;
 }
 
 .text-\[8px\] {
@@ -1795,9 +1780,7 @@ video {
   transition-duration: 500ms;
 }
 
-* {
-  /* outline: 1px solid salmon; */
-}
+/* Global Styles */
 
 body {
   font-family: "Montserrat", serif;
@@ -1817,14 +1800,14 @@ html {
 }
 
 .Helvetic_font {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 /* Custom Scrollbar */
 
 ::-webkit-scrollbar {
   width: 0px;
+  /* Hide scrollbar */
 }
 
 /* Background Images */
@@ -1857,6 +1840,8 @@ html {
   background-position: center;
 }
 
+/* Background Image for larger screens */
+
 @media (min-width: 1024px) {
   .bg-residencyCover {
     background-image: url("../assets/images/for_landing/getResidency.png");
@@ -1865,7 +1850,7 @@ html {
     background-position: center;
   }
 
-  /* Cancel gradient overlay */
+  /* Cancel gradient overlay on larger screens */
 
   .gradient-overlay {
     background: none;
@@ -1878,9 +1863,9 @@ html {
   background: linear-gradient(to right, black, transparent 50%, black);
 }
 
-@media (min-width: 880px) {
-  /* Cancel gradient overlay */
+/* Cancel gradient overlay for medium screens and up */
 
+@media (min-width: 880px) {
   .gradient-overlay {
     background: none;
   }
@@ -1922,6 +1907,8 @@ html {
   padding: 8px;
 }
 
+/* Disable marquee animation on small screens and up */
+
 @media (min-width: 640px) {
   .animate-marquee {
     animation: none;
@@ -1938,6 +1925,8 @@ html {
 .item-marquee-client {
   display: block;
 }
+
+/* Disable marquee animation for clients on medium screens and up */
 
 @media (min-width: 880px) {
   .animate-marquee-client {
@@ -2301,10 +2290,6 @@ html {
     margin-top: 2rem;
   }
 
-  .sm\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
   .sm\:flex {
     display: flex;
   }
@@ -2418,10 +2403,6 @@ html {
     gap: 2rem;
   }
 
-  .sm\:gap-10 {
-    gap: 2.5rem;
-  }
-
   .sm\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -2454,6 +2435,11 @@ html {
     line-height: 2.25rem;
   }
 
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .sm\:text-\[22px\] {
     font-size: 22px;
   }
@@ -2479,11 +2465,6 @@ html {
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .sm\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .sm\:leading-10 {
@@ -2655,11 +2636,6 @@ html {
     margin-bottom: 5rem;
   }
 
-  .lg\:my-\[203px\] {
-    margin-top: 203px;
-    margin-bottom: 203px;
-  }
-
   .lg\:mb-14 {
     margin-bottom: 3.5rem;
   }
@@ -2678,6 +2654,10 @@ html {
 
   .lg\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .lg\:mt-\[203px\] {
+    margin-top: 203px;
   }
 
   .lg\:block {
