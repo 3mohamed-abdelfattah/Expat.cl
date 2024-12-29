@@ -785,6 +785,11 @@ video {
   margin-right: 0.25rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -833,6 +838,11 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .mb-1 {
@@ -1100,6 +1110,10 @@ video {
   width: 100%;
 }
 
+.w-44 {
+  width: 11rem;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -1253,6 +1267,14 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1267,6 +1289,14 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.content-center {
+  align-content: center;
+}
+
+.content-evenly {
+  align-content: space-evenly;
 }
 
 .items-start {
@@ -1299,6 +1329,14 @@ video {
 
 .justify-evenly {
   justify-content: space-evenly;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.justify-items-stretch {
+  justify-items: stretch;
 }
 
 .gap-1 {
@@ -1583,6 +1621,10 @@ video {
   text-align: justify;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1780,6 +1822,10 @@ video {
   transition-duration: 500ms;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 /* Global Styles */
 
 body {
@@ -1800,7 +1846,8 @@ html {
 }
 
 .Helvetic_font {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 /* Custom Scrollbar */
@@ -1840,27 +1887,19 @@ html {
   background-position: center;
 }
 
-/* Background Image for larger screens */
+.bg-residencyCover {
+  background-image: url("../assets/images/for_landing/getResidency.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 @media (min-width: 1024px) {
-  .bg-residencyCover {
-    background-image: url("../assets/images/for_landing/getResidency.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
   /* Cancel gradient overlay on larger screens */
 
   .gradient-overlay {
     background: none;
   }
-}
-
-/* Custom gradient overlay */
-
-.gradient-overlay {
-  background: linear-gradient(to right, black, transparent 50%, black);
 }
 
 /* Cancel gradient overlay for medium screens and up */
@@ -2006,6 +2045,10 @@ html {
 
   .tiny\:w-\[350px\] {
     width: 350px;
+  }
+
+  .tiny\:w-48 {
+    width: 12rem;
   }
 
   .tiny\:flex-nowrap {
@@ -2205,6 +2248,11 @@ html {
     line-height: 1.75rem;
   }
 
+  .vsm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .vsm\:opacity-100 {
     opacity: 1;
   }
@@ -2231,6 +2279,10 @@ html {
     right: 0px;
   }
 
+  .sm\:m-20 {
+    margin: 5rem;
+  }
+
   .sm\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -2244,6 +2296,11 @@ html {
   .sm\:my-20 {
     margin-top: 5rem;
     margin-bottom: 5rem;
+  }
+
+  .sm\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .sm\:mb-0 {
@@ -2337,6 +2394,10 @@ html {
 
   .sm\:w-full {
     width: 100%;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
   }
 
   .sm\:max-w-\[200px\] {
@@ -2747,9 +2808,18 @@ html {
     padding-right: 6rem;
   }
 
+  .lg\:text-left {
+    text-align: left;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .lg\:text-\[44px\] {
@@ -2823,8 +2893,8 @@ html {
     width: auto;
   }
 
-  .xl\:max-w-\[597px\] {
-    max-width: 597px;
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .xl\:flex-row {
@@ -2882,6 +2952,10 @@ html {
 
   .\32xl\:-right-\[86px\] {
     right: -86px;
+  }
+
+  .\32xl\:ml-0 {
+    margin-left: 0px;
   }
 
   .\32xl\:gap-12 {

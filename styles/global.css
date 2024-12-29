@@ -24,7 +24,8 @@ html {
 }
 
 .Helvetic_font {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 /* Custom Scrollbar */
@@ -62,24 +63,18 @@ html {
   background-position: center;
 }
 
-/* Background Image for larger screens */
-@media (min-width: 1024px) {
-  .bg-residencyCover {
-    background-image: url("../assets/images/for_landing/getResidency.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+.bg-residencyCover {
+  background-image: url("../assets/images/for_landing/getResidency.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
+@media (min-width: 1024px) {
   /* Cancel gradient overlay on larger screens */
   .gradient-overlay {
     background: none;
   }
-}
-
-/* Custom gradient overlay */
-.gradient-overlay {
-  background: linear-gradient(to right, black, transparent 50%, black);
 }
 
 /* Cancel gradient overlay for medium screens and up */
