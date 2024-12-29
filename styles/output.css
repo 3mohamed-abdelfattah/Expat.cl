@@ -770,6 +770,10 @@ video {
   z-index: 50;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .m-5 {
   margin: 1.25rem;
 }
@@ -835,6 +839,10 @@ video {
 
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mb-11 {
+  margin-bottom: 2.75rem;
 }
 
 .mb-16 {
@@ -973,6 +981,14 @@ video {
   height: 350px;
 }
 
+.h-\[41px\] {
+  height: 41px;
+}
+
+.h-\[43px\] {
+  height: 43px;
+}
+
 .h-\[56px\] {
   height: 56px;
 }
@@ -983,6 +999,14 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.max-h-\[262px\] {
+  max-height: 262px;
+}
+
+.min-h-\[429px\] {
+  min-height: 429px;
 }
 
 .min-h-\[790px\] {
@@ -1100,6 +1124,10 @@ video {
 
 .max-w-\[345px\] {
   max-width: 345px;
+}
+
+.max-w-\[418px\] {
+  max-width: 418px;
 }
 
 .max-w-\[474px\] {
@@ -1311,6 +1339,10 @@ video {
   border-radius: 9999px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -1337,6 +1369,11 @@ video {
 
 .border-t-4 {
   border-top-width: 4px;
+}
+
+.border-\[\#9AC0DC\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(154 192 220 / var(--tw-border-opacity, 1));
 }
 
 .border-\[\#F2F5F6\] {
@@ -1548,6 +1585,11 @@ video {
   line-height: 1;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-\[22px\] {
   font-size: 22px;
 }
@@ -1638,6 +1680,11 @@ video {
 .text-\[\#5F6A75\] {
   --tw-text-opacity: 1;
   color: rgb(95 106 117 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#9AC0DC\] {
+  --tw-text-opacity: 1;
+  color: rgb(154 192 220 / var(--tw-text-opacity, 1));
 }
 
 .text-black {
@@ -1768,6 +1815,13 @@ html {
   background-position: center;
 }
 
+.bg-heroCategory {
+  background-image: url("../assets/images/for_category/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 @media (min-width: 1024px) {
   .bg-residencyCover {
     background-image: url("../assets/images/for_landing/getResidency.png");
@@ -1866,9 +1920,18 @@ html {
   transition: transform 0.3s ease-in-out;
 }
 
+.hover\:bg-\[\#F2F5F6\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 245 246 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-primaryColor\/70:hover {
+  background-color: rgb(42 56 71 / 0.7);
 }
 
 .hover\:bg-red-900:hover {
@@ -2046,6 +2109,14 @@ html {
     align-items: center;
   }
 
+  .vsm\:gap-8 {
+    gap: 2rem;
+  }
+
+  .vsm\:gap-5 {
+    gap: 1.25rem;
+  }
+
   .vsm\:overflow-auto {
     overflow: auto;
   }
@@ -2076,6 +2147,11 @@ html {
     padding-top: 90px;
   }
 
+  .vsm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .vsm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2102,6 +2178,11 @@ html {
   .vsm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .vsm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .vsm\:opacity-100 {
@@ -2177,6 +2258,10 @@ html {
     margin-top: 2rem;
   }
 
+  .sm\:mb-11 {
+    margin-bottom: 2.75rem;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -2203,6 +2288,10 @@ html {
 
   .sm\:w-\[310px\] {
     width: 310px;
+  }
+
+  .sm\:w-\[350px\] {
+    width: 350px;
   }
 
   .sm\:w-\[60px\] {
@@ -2313,6 +2402,11 @@ html {
     text-align: left;
   }
 
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2366,6 +2460,10 @@ html {
     margin-bottom: 30px;
   }
 
+  .md\:mb-11 {
+    margin-bottom: 2.75rem;
+  }
+
   .md\:mb-12 {
     margin-bottom: 3rem;
   }
@@ -2374,8 +2472,16 @@ html {
     margin-bottom: 4rem;
   }
 
+  .md\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .md\:ml-32 {
     margin-left: 8rem;
+  }
+
+  .md\:mt-5 {
+    margin-top: 1.25rem;
   }
 
   .md\:block {
@@ -2404,6 +2510,10 @@ html {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
   }
 
   .md\:p-0 {
@@ -2517,6 +2627,10 @@ html {
     display: flex;
   }
 
+  .lg\:grid {
+    display: grid;
+  }
+
   .lg\:hidden {
     display: none;
   }
@@ -2539,6 +2653,10 @@ html {
 
   .lg\:max-w-\[600px\] {
     max-width: 600px;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:flex-row {

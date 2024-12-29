@@ -50,6 +50,13 @@ html {
   background-position: center;
 }
 
+.bg-heroCategory {
+  background-image: url("../assets/images/for_category/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 @media (min-width: 1024px) {
   .bg-residencyCover {
     background-image: url("../assets/images/for_landing/getResidency.png");
