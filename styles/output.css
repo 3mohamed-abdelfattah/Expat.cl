@@ -2323,6 +2323,10 @@ html {
     width: 350px;
   }
 
+  .sm\:w-\[400px\] {
+    width: 400px;
+  }
+
   .sm\:w-\[60px\] {
     width: 60px;
   }
@@ -2525,6 +2529,10 @@ html {
     width: 377px;
   }
 
+  .md\:w-\[498px\] {
+    width: 498px;
+  }
+
   .md\:max-w-\[412px\] {
     max-width: 412px;
   }
@@ -2628,6 +2636,11 @@ html {
     position: absolute;
   }
 
+  .lg\:mx-24 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
   .lg\:my-20 {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -2657,6 +2670,10 @@ html {
     margin-top: 203px;
   }
 
+  .lg\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -2675,6 +2692,10 @@ html {
 
   .lg\:w-\[350px\] {
     width: 350px;
+  }
+
+  .lg\:w-\[598px\] {
+    width: 598px;
   }
 
   .lg\:w-auto {
@@ -2799,16 +2820,20 @@ html {
     margin-bottom: 0px;
   }
 
+  .xl\:mt-\[203px\] {
+    margin-top: 203px;
+  }
+
   .xl\:mt-\[60px\] {
     margin-top: 60px;
   }
 
-  .xl\:w-\[598px\] {
-    width: 598px;
-  }
-
   .xl\:w-auto {
     width: auto;
+  }
+
+  .xl\:w-\[598px\] {
+    width: 598px;
   }
 
   .xl\:grid-cols-4 {
@@ -2874,6 +2899,22 @@ html {
 
   .\32xl\:ml-0 {
     margin-left: 0px;
+  }
+
+  .\32xl\:w-full {
+    width: 100%;
+  }
+
+  .\32xl\:min-w-\[700px\] {
+    min-width: 700px;
+  }
+
+  .\32xl\:max-w-\[900px\] {
+    max-width: 900px;
+  }
+
+  .\32xl\:max-w-full {
+    max-width: 100%;
   }
 
   .\32xl\:gap-12 {

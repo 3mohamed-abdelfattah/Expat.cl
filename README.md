@@ -8,12 +8,6 @@ Expat.cl is a comprehensive web platform that provides essential support service
   <img src="https://github.com/user-attachments/assets/2d16a28c-ed29-4829-9096-facf99bf5288" width="150">
 </p>
 
----
-
-## Features
-- **Quick Responses**: Get responses to your queries within 24 hours.
-- **Expat Support**: Comprehensive support services to help expatriates settle in Chile.
-- **Tailor-Made Solutions**: Customized solutions to meet the unique needs of each expat.
 
 ---
 
@@ -262,6 +256,7 @@ These scores are based on Lighthouse audits, ensuring the site is optimized for 
 
 ## Technologies Used
 This project leverages the following technologies:
+
 - **HTML**
 - **Tailwind CSS**
 - **JavaScript**
