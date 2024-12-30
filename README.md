@@ -1,8 +1,8 @@
 # Expat.cl
 
-Expat.cl is a comprehensive web platform that provides essential support services for expatriates moving to Chile. This project aims to offer services such as temporary accommodation, quick response to queries, expat support, and tailor-made solutions to ease the transition for individuals and families relocating to Chile.
+Expat.cl is a client project for issuing visas to Chile. The client requested converting a Figma design into HTML using Tailwind CSS, ensuring the final implementation matches the design perfectly. The project was completed in less than five days, maintaining clean, organized code and professional documentation.
 
-
+**Note:** Based on the client's request, the pages are not linked to each other.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/2d16a28c-ed29-4829-9096-facf99bf5288" width="150">
@@ -15,20 +15,28 @@ Expat.cl is a comprehensive web platform that provides essential support service
 
  <table align="center">
   <tr align='center'>
-    <td><img src="https://github.com/user-attachments/assets/ef8d5d4d-42ab-46e6-a390-c5fcb2e4c20f" alt="Image" /></td>
-    <td><img src="https://github.com/user-attachments/assets/99e05fda-4ce6-42e3-8461-5a7fb6a8756c" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/ec4470d2-2897-4743-8742-6ab1366e1319" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/dc014986-5d9f-439e-84cf-2e9bcbe4e8b1" alt="Image" /></td>
   </tr>
   <tr align='center'>
-    <td><img src="https://github.com/user-attachments/assets/04878613-fcb5-4da5-8645-54af2d0f5034" alt="Image" /></td>
-    <td><img src="https://github.com/user-attachments/assets/fd904143-04b0-4f1c-9b84-85984205d8ee" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/765196f2-1edc-4eaf-9dfc-241a865a6d01" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/83be9d3a-a455-466c-8611-95c02150efa4" alt="Image" /></td>
   </tr>
   <tr align='center'>
-    <td><img src="https://github.com/user-attachments/assets/54687449-f1e4-4248-a542-41bffe9eb4b4" alt="Image" /></td>
-    <td><img src="https://github.com/user-attachments/assets/e36ff0f6-3fdd-47b5-a9bb-d7a66c0b66eb" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/cf8ff2da-5f72-47dd-9b10-b0341cca4977" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/5edde94b-ddd2-4a2d-b99a-3eded1fbc39a" alt="Image" /></td>
   </tr>
   <tr align='center'>
-    <td><img width='320px' src="https://github.com/user-attachments/assets/e59edcce-5db9-423c-824e-abb9d878e7b2" alt="Image" /></td>
-    <td><img width='320px' src="https://github.com/user-attachments/assets/192d25cb-4ee3-4748-b224-e1e8d6c654ae" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/014816c4-43e3-4beb-aa7c-1fc33a671354" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/b02663af-05d7-4024-aea2-4f5bfe4af398" alt="Image" /></td>
+  </tr>
+     <tr align='center'>
+    <td><img src="https://github.com/user-attachments/assets/36d3e337-0899-485d-8564-7851f5380156" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/6f54409b-41bc-4293-b61a-5653ae155bad" alt="Image" /></td>
+  </tr>
+     <tr align='center'>
+    <td><img src="https://github.com/user-attachments/assets/17e4e486-68ab-426a-99f9-7b5bd35dceb2" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/767d3d0f-9cce-44df-88f3-98f5aabc3f12" alt="Image" /></td>
   </tr>
 </table>
 
