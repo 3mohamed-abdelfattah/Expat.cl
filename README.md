@@ -303,9 +303,3 @@ This project is protected under the **Creative Commons Attribution-NonCommercial
 3. Distribution or modification of the project is not allowed.
 
 [Read the full license text here](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode).
-
-## Contact
-
-- Mohamed Mohamed - [mohamed.devmaster@gmail.com](mailto:mohamed.devmaster@gmail.com)
-- via [WhatsApp](https://wa.me/201101201745).
-- via [Upwork](https://www.upwork.com/freelancers/~019d1b98220787822b).
